@@ -1,0 +1,55 @@
+# Starts with 10.7 vanilla image
+# Creates ladmin and IFSS users and sets basic preferences
+# Installs and updates some standard software
+
+# For Lab 2 computers (connect to IFSS3 Airport) edit firstboot below
+
+# For PT version, include 10.6.7 vanilla
+include-file:	IFSS_10.7_vanilla.catalog
+
+# Comment these out unless building this specific image
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_7_basic-1.0.0
+
+
+System Settings:
+
+	ClearRegistration	clearReg.dmg	sha1:0cf3080cc0179fe63883e40a180f6a92b573fd70
+
+	# Remove App Store application (10.6.7)
+#	NoMAS	NoMAS.pkg	sha1:86aa4aba4d9eb3e806ab6711cf8e653c0244352a
+	
+	# Note - install basic dock only at this stage: need to update throughout build train
+	Copy Prefs	CopyPrefs.pkg	sha1:920c442654ef3c9f666f6444dd437557607a6ab7
+	
+	# SetPics script won't run, but this will install required pics
+	Set Pics	SetPics.pkg	sha1:f0c1da58caa4c290968d4b91f12969b77424ab00
+
+	CreateLionUser_ladmin	CreateLionUser_ladmin.pkg	sha1:64294c69175a675ebf293fe35843facf729bdf3a
+	CreateLionUser_IFSS	CreateLionUser_IFSS.pkg	sha1:18274f3b82d649d94029cc94d957239bf8a10534
+	
+	Copy MCX	CopyMCX.pkg	sha1:f13c6210012e764946f02b42ca9543fdcde21d1d
+
+	enableAD	enableAD.pkg	sha1:fddd573ebf880d6f0f504ec6450c2b33e44448f6
+	
+	firstboot	firstboot.mpkg	sha1:790fa15c45a19d90d36f509b5841c9c61b709ff8
+#	Use this version for Lab 2 computers (connect to IFSS3 Airport)
+#	firstbootl2	firstbootl2.mpkg	sha1:612600194fd874f48bc0c84c6a9a99236ee3a0cc	
+
+	initSettings	initSettings.mpkg	sha1:3c11c811fc0d34a8f0a59962b24d6548c7f02269
+	resetMCX	resetMCX.mpkg	sha1:934a3e757932878c5682085d5409875f37055334
+
+#	Set software update preferences (checking off)	
+	softwareupdate	softwareupdate.pkg	sha1:10097845982e8b5ffc03a912ce9c0c5bf4a5a5c5
+
+
+Third Party Software:
+
+#	Use Star Deploy to deploy updates and new packages/apps/files 
+	StarDeploy v1.2.5	StarDeploy v1.2.5.pkg	sha1:f55a5c4fa6766f4bb38c51964770088f69c2d639
+	StarDeploy Prefs	sdPrefs.pkg	sha1:034930b81f2655a9381afb4850f38a6047c21ad6
+
+	Flip4Mac 2.3.8.1	Flip4Mac WMV.mpkg	sha1:0b88dc9fb85398df023fa93b03673da66f9d96db
+
+
+Software Settings:

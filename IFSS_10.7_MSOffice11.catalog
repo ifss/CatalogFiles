@@ -1,0 +1,27 @@
+# Starts with image including all common office etc. software
+# Installs all production system software except for FCP and stock media
+
+include-file:	IFSS_10.7_iWork.catalog
+
+# Comment these out unless building this specific image
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_7_MSOffice11-1.0.0
+
+System Settings:
+
+# Install appropriate dock
+
+
+Third Party Software:
+
+
+#	Office Installer
+
+#	Updates, Mosen patched
+
+
+
+Software Settings:
+
+#	firstrun-office	firstrun-office.pkg	sha1:b6bc9c72a106b30d8825ca26a8e881d8849c9c04
+

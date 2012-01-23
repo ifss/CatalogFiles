@@ -1,0 +1,73 @@
+# Creates a basic 10.6 image with all the items that would appear in software update
+# Includes ProKit Update that will be required once Pro software is installed
+# Updated by SM
+
+Installer Disc Builds = 10A432, 10B504, 10C540, 10D573, 10D575, 10F569
+Installer Choices File:	./instadmg/InstallerFiles/BaseOS/10.6_InstallerChoices.xml	sha1:30237e5b26e3f437b36d7e6ae3d59a0af7b212b9
+
+
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_6_vanilla-1.0.0
+
+
+OS Updates:
+
+#	For 10.6.8
+#	Mac OS X 10.6.7 Combo Update	http://support.apple.com/downloads/DL1361/en_US/MacOSXUpdCombo10.6.7.dmg	sha1:4f359529e08482be1fcbe3b7500c7a73062a8e8e
+	Mac OS X 10.6.8 Combo Update	http://support.apple.com/downloads/DL1399/en_US/MacOSXUpdCombo10.6.8.dmg	sha1:7e22a53b62bf16f44fbba4042606af91888335cf
+
+	Security Update 2011-002	http://support.apple.com/downloads/DL1376/en_US/SecUpd2011-002Snow.dmg	sha1:175c1adf0af15d817c272354dd75300ca6416792
+	Security Update 2011-003	http://support.apple.com/downloads/DL1387/en_US/SecUpd2011-003Snow.dmg	sha1:07843c32a8b367fbe4318bdf22dd98013a91cd51
+	SnowLeopardFontUpdate	http://support.apple.com/downloads/DL1377/en_US/SnowLeopardFontUpdate.dmg	sha1:7d62a0936f9b572476ebc832db8604ea0e4932b6	
+	Security Update 2011-005	http://support.apple.com/downloads/DL1446/en_US/SecUpd2011-005Snow.dmg	sha1:065f5f9a9263a2cd164ea61d1d59c63b1362df0b
+#	Security Update 2011-006 now available
+
+#	10.6.5 if needed
+#	Mac OS X 10.6.5 Combo Update	http://support.apple.com/downloads/DL1324/en_US/MacOSXUpdCombo10.6.5.dmg	sha1:add336a1af1c3914887d2217fbbc98b18e6fb57c
+#	iTunes 10.2.2	http://appldnld.apple.com/iTunes10/041-0533.20110418.AqP4r/iTunes10.2.2.dmg	sha1:7b94065174927dbce71182c89a00b3966021ceb8
+
+#	iTunes 10.3.1	http://appldnld.apple.com/iTunes10/041-1632.20110607.SUch3/iTunes10.3.1.dmg	sha1:a4707d61a4d0b2d3a76b77b57a6a56f2eef9a5c1
+	iTunes10.4.1	http://appldnld.apple.com/iTunes10/041-2072.20110822.frk45/iTunes10.4.1.dmg	sha1:18c12446addcb7783cfa2954b514705c621fd674
+
+#	Safari 5.0.5	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/Safari5/041-0564.20110413.Fi9pb/Safari5.0.5SnowLeopard.dmg	sha1:631cd280171938491c45a905e24904e7739eaefe
+	Safari 5.1	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/Safari5/041-1608.20110720.DedcP/Safari5.1SnowLeopard.dmg	sha1:2c3cef8e06c5aa586379b1a5fd5cf7b54e8acc24
+#	Safari 5.1.1 (for 10.6.8) now available
+
+#	Java For Mac OS X 10.6 Update 4	http://support.apple.com/downloads/DL1360/en_US/JavaForMacOSX10.6Update4.dmg	sha1:513d5c5b62fb1257b8bf582c1c11e02e944fa808
+	Java For Mac OS X 10.6 Update 5	http://support.apple.com/downloads/DL1360/en_US/JavaForMacOSX10.6Update5.dmg	sha1:242a3af116c381e091ebee1ddd28beb36c1b4b62
+#	AirPort Utility 5.5.2	http://support.apple.com/downloads/DL955/en_US/AirPortUtility552.dmg	sha1:d687889612acbd01450dee1517de88ea963011a6
+	AirPort Utility 5.5.3	http://support.apple.com/downloads/DL1390/en_US/AirPortUtility553.dmg	sha1:9a2ebd9333d780fe280120f58e4af5bea51a3958
+
+	iLife Support 9.0.4	http://support.apple.com/downloads/DL1009/en_US/iLifeSupport904.dmg	sha1:7cda1492d1bab91383b5738a7cda2cde24f72d2c
+
+	AirPort Base Station Update 2010-001 5.5.1	http://support.apple.com/downloads/DL955/en_US/AirPortUtility551.dmg	sha1:542636fb7d538795cf18db6aa4453c4bcb570c19	
+#	Security Update 2010-005 for SnowLeopard	http://support.apple.com/downloads/DL1094/en_US/SecUpd2010-005Snow.dmg	sha1:0f849caddd3b61383dabf423848f9f8059f4656e
+#	Security Update 2010-006 for SnowLeopard	http://support.apple.com/downloads/DL1105/en_US/SecUpd2010-006Snow.dmg	sha1:84e2c0b95e932be42360273f99581ecf2c25fe34
+#	Snow Leopard Graphics Update 1.0	http://support.apple.com/downloads/DL1083/en_US/SnowLeopardGraphicsUpdate1.0.dmg	sha1:4420f04cee43882e138a27e4b05a77bda9d1a436
+	
+#	LED Cinema Display Update 1.0	http://support.apple.com/downloads/DL1107/en_US/LEDCinemaDisplaySWUpdate1.0.dmg	sha1:a02af82ad48869a4bea93db869afa01886f95d94	
+#	Apple Magic Trackpad MultiTouch Update 1.0	http://support.apple.com/downloads/DL1066/en_US/MagicTrackpadMultiTouchUpd1.0.dmg	sha1:9120843e2ae19e8333f512c6e53c81b34658e04a
+#	Digital Camera RAW Compatibility Update 3.3	http://support.apple.com/downloads/DL1072/en_US/RAWCameraUpdate3.dmg	sha1:f8760397b2bd8c3d7d22270c551e733b248916b5
+#	RAWCameraUpdate3.5	http://support.apple.com/downloads/DL1339/en_US/RAWCameraUpdate3.5.dmg	sha1:5c00f412d32f902fb025ad60677fd3f170e56dde
+
+#	For 10.6.6 or later (although 10.5.8 supported)
+#	RAW Camera Update 3.7	http://support.apple.com/downloads/DL1386/en_US/RAWCameraUpdate3.dmg	sha1:d42cc3d28650240b9e9aa86d7381f320b3767052
+#	For 10.6.5 or later
+	RAW Camera Update 3.8	http://support.apple.com/downloads/DL1445/en_US/RAWCameraUpdate3.dmg	sha1:1546a1acdc62e95c98fab894ed5a2e07fc794fc3
+
+
+# the following is only needed when used with 10.6.0 base install media
+#	Remote Desktop Client 3.3.2	http://support.apple.com/downloads/DL986/en_US/RemoteDesktopClient.dmg	sha1:707812be781a5e3635c552bef24382c1eced93cf
+#	Remote Desktop Client 3.4	http://support.apple.com/downloads/DL1350/en_US/RemoteDesktopClient.dmg	sha1:46df7a3b31cd2b51213e1a6fd193d5073c004771
+	Remote Desktop Client 3.5.1	http://support.apple.com/downloads/DL1423/en_US/RemoteDesktopClient.dmg	sha1:3b297ac77cf77087529dbfbaec4f2bfe7bd4956c
+
+
+	SnowLeoMigrationAssistant	http://support.apple.com/downloads/DL1420/en_US/SnowLeoMigrationAssistant.dmg	sha1:c153a200382cccaf00ba7a3dafba988b3a33a162
+
+
+Apple Updates:
+	
+#	ProKit Update 6.0.1 SnowLeopard	http://support.apple.com/downloads/DL1318/en_US/ProKitUpdate6.0.1.dmg	sha1:d66fefa85bb47933d2a2fa25e175dd5f57f87e31
+
+#	For 10.6.6 or later
+	ProKit Update 7.0	http://support.apple.com/downloads/DL1385/en_US/ProKitUpdate7.0.dmg	sha1:992ff17ec2233a455225d06cb3ee17ef62a02445

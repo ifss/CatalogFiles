@@ -1,0 +1,46 @@
+# Starts with image including all common office etc. software
+# Installs all production system software except for FCP/Adobe and stock media
+
+include-file:	IFSS_10.6_office.catalog
+
+# Comment these out unless building this specific image
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_6_7_prod-1.3.0
+
+System Settings:
+
+# Install appropriate dock
+	setdock-prod	setdock-prod.pkg	sha1:34cc7088524732769d6242f0a14dd3fe4038d3e2
+
+
+Third Party Software:
+
+#	Already installed with OS via installer choices
+#	QuickTimePlayer 7.6.6 SnowLeopard	http://support.apple.com/downloads/DL923/en_US/QuickTimePlayer7.6.6_SnowLeopard.dmg	sha1:65e7456d9bb8697da7a2cda8842b29160123913c
+
+	VideoSpec_0.8.7a	VideoSpec_0.8.7a.dmg	sha1:46b6a28916f7cd11b7d0a813041b3d33933abe02
+	aspectRatio_1.12	aspectRatio_1.12.dmg	sha1:5c2324cdc9ea65c82022062d3082b2a52ba1a0ea
+	AJADataCalc	AJADataCalc.dmg	sha1:ce027001ac24d72ffdbfe9337d264da70477101b
+
+#	Adobe Air 2.5.1	Adobe Air.pkg	sha1:1149c4c800bc853cdd0ce6051e477653004ddf24
+	Adobe Air 2.7.1	adobeair271.pkg	sha1:12e0a1515b49a42daa9f6cc7cb30063e2cbc5c29
+
+	Kuler	Kuler.pkg	sha1:7aff0967730e8225c6dba27bf12c89e9f1bc4cf2
+
+	Perian 1.2.2	Perian-1.2.2.pkg	sha1:53995bc2bfdfe3eb9e5196d2fcfcaf1769b0fc43
+
+	Google SketchUp 8.0 Installer	Google SketchUp 8.0 Installer.mpkg	sha1:fd11268ec0743e08489619bc41656476ebe5037b
+	Google Earth	GoogleEarthMacNoUpdate-Intel.dmg	sha1:50e7ebf30ba29e3ff7ab505f37a04c1c62c445f8
+
+	JES_Deinterlacer_v3.7.1	JES_Deinterlacer_v3.7.1.dmg	sha1:a2a8bf9b2b2b64097581636a9da3ae1a837c4ca1
+	MPEG Streamclip 1.9.2	MPEG_Streamclip_1.9.2.dmg	sha1:346ea3aef9b7638a0e39e30e494f04010c73afe1
+	Evom	Evom.dmg	sha1:6054e6d72904aa3c327dfaa9297b953492e50845
+	evomsupport	evomsupport.pkg	sha1:339e5c1bbd6c8fa7a54569472b99672613589aa2
+
+	avccamviewer_1.2.sl	avccamviewer_1.2.sl.mpkg	sha1:3e1c035d1bbd7ad76d7d3ba315bd7120c4f146e0
+
+
+Software Settings:
+
+	firstrun-prod-gs	firstrun-prod-gs.pkg	sha1:36f7a5ae83964688e515259069aab3064cadd07d
+	firstrun-prod-mps	firstrun-prod-mps.pkg	sha1:5bba406819c682ab50090a17d3ca5456bbf00e86

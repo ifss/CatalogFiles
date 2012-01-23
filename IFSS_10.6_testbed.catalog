@@ -1,0 +1,66 @@
+# Starts with production image
+# Installs everything except editing packages as basis for testing new versions
+
+# Comment out according to specific version being built
+
+# For PT version, edit basic catalog to include 10.6.7 vanilla
+# For Lab 2 version, edit Basic catalog (firstbootl2 connects to IFSS3)
+
+include-file:	IFSS_10.6_prod.catalog
+ 
+# Comment these out unless building this specific image
+Output Volume Name = IFSS HD
+Output File Name = IFSS-10_6_testbed-1.3.0
+
+
+System Settings:
+
+#	Install appropriate dock
+#	setdock-edit	setdock-edit.pkg	sha1:7975f67c0cef1154d7b62504b1283cf0d781a34e
+
+#	Install cleanup scripts -- only needed for lab computers
+	cleanups	cleanups.mpkg	sha1:81564a143c9243d89ae4322c49d6a667922114f7
+
+#   Standard FAM Installer doesn't work in image - this should reinstall/fix on first login
+#	fixFAMdriver	fixFAMdriver.mpkg	sha1:3e6036be3aba2c8ff9ab71fb7bc9735fbfe9950c
+
+
+Third Party Software:
+
+
+#	FCP would go here
+
+	Contour Shuttle	Contour Shuttle.pkg	sha1:e98b1d575d04df80b97eefb11ad14ee4d4edcc59
+	
+	Make Temp Trash	MakeTempTrash.pkg	sha1:bac8abbe01c0a567cfd822bb22104b67f8ba21b7
+
+#	For PT/Standard Lab version
+#	All Magic Bullet Software -- for all apps
+#	completeMB	completeMB.pkg	sha1:d1f014d04bc7bdee0a182bb9ba056e2e50f8f4b1
+
+# For RED version
+#	CS4
+#	completeMB-CS4	completeMB-CS4.pkg	sha1:e07aa20f79caf9e3af9b973bb2c67ad725b26cdc
+
+# Normally installed after Final Cut Studio	
+#	XDCAM Transfer	XDCAM Transfer 2.12.mpkg	sha1:a7609de5880d4bda23d014f680b7b4113290c827
+# Drivers for XDCAM
+#	XDCAM Drive Software	XDCAM Drive Software.pkg	sha1:c194008f5235b5be5cae1e65dd7f0267c993b444
+
+#	Not sure if this requires XDCAM to be installed
+#	ClipBrowser	ClipBrowser.pkg	sha1:b95fcb7fc32a9c51cade4447cb403c01820e6277
+
+	5DtoRGB	5DtoRGB.dmg	sha1:16fd1740e2e5fac2bdd90b866ccd9938f323d396
+	
+	AVCCAM Restorer	AVCCAM Restorer.dmg	sha1:d937ad3420ba8d5bc37bfa5d10b6057784b6e5a2
+
+
+	IFSS Stock Media	IFSS Stock Media.pkg	sha1:9cde031ec63ff176ca2424afbbbfeb332f1cf977
+# Added in separately for easier updating
+	ifsslogos	ifsslogos.pkg	sha1:0022576e739f3606341a185c857030803e96a891
+
+
+Software Settings:
+
+
+

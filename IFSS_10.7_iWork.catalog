@@ -1,0 +1,28 @@
+# Starts with basic image including updates, users, preferences etc
+# Installs all common software for non-editing systems
+
+include-file:	IFSS_10.7_iLife11.catalog
+ 
+# Comment these out unless building this specific image
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_7_office-1.0.0
+
+System Settings:
+
+# Install appropriate dock
+#	setdock-office	setdock-office.pkg	sha1:3752ce1f541279aaf37208559577ceb0452f6762
+
+	
+Third Party Software:
+
+#	iWork08	iWork08.mpkg	sha1:08492b56e83ce65b81c23c186de0e7ca683ae0d9
+	
+#	Pages 08 3.0.3	http://support.apple.com/downloads/DL808/en_US/Pages_303.dmg	sha1:b03c37d3f1a0093db600324e226584839e2f3b49
+#	Numbers 08 1.0.3	http://support.apple.com/downloads/DL809/en_US/Numbers_103.dmg	sha1:ca6530a300df4b17eb6655b0978d4322b4fa0d62
+#	Keynote 08 4.0.4	http://support.apple.com/downloads/DL807/en_US/Keynote_404.dmg	sha1:29709a813b391e23d4327b3fa295115c984c22aa
+	
+#	iWorkLicense	iWorkLicense.pkg	sha1:8631cbaf199cddaab07548a0ede1d9baeade2db8
+#	iWorkPrefs	iWorkPrefs.pkg	sha1:0a7e18a93235c5da846bea96b0b434112cdd23c5
+
+Software Settings:
+

@@ -1,0 +1,76 @@
+# Starts with basic image including updates, users, preferences etc
+# Installs all common software for non-editing systems
+
+include-file:	IFSS_10.6_basic.catalog
+ 
+# Comment these out unless building this specific image
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_6_office-1.0.0
+
+System Settings:
+
+# Install appropriate dock
+	setdock-office	setdock-office.pkg	sha1:3752ce1f541279aaf37208559577ceb0452f6762
+
+	
+Third Party Software:
+
+	iWork08	iWork08.mpkg	sha1:08492b56e83ce65b81c23c186de0e7ca683ae0d9
+	
+	Pages 08 3.0.3	http://support.apple.com/downloads/DL808/en_US/Pages_303.dmg	sha1:b03c37d3f1a0093db600324e226584839e2f3b49
+	Numbers 08 1.0.3	http://support.apple.com/downloads/DL809/en_US/Numbers_103.dmg	sha1:ca6530a300df4b17eb6655b0978d4322b4fa0d62
+	Keynote 08 4.0.4	http://support.apple.com/downloads/DL807/en_US/Keynote_404.dmg	sha1:29709a813b391e23d4327b3fa295115c984c22aa
+	
+	iWorkLicense	iWorkLicense.pkg	sha1:8631cbaf199cddaab07548a0ede1d9baeade2db8
+	iWorkPrefs	iWorkPrefs.pkg	sha1:0a7e18a93235c5da846bea96b0b434112cdd23c5
+
+	Office Installer	Office Installer.mpkg	sha1:b614b8fe05b2a68064d77cad0294d7692df56e15
+	OfficePrefs	OfficePrefs.pkg	sha1:87585657094afdfb5d5512b3fc86c6501510e3b0
+
+#	Rosetta required to run Office and FCP update installers --- only on Snow Leopard of course
+#	Already installed with OS via installer choices
+#	Rosetta	Rosetta.pkg	sha1:d215271da049256be552a6c78daa99fdd667a025
+
+#	Office update packages made with InstallEase
+
+	Microsoft Auto Update 2	mau2.pkg	sha1:9ffc5b08c1e283107cf8fc2a19004f0ada8f74bc
+	
+#	SP1 update is minimum requirement for all later updates (SP2 not needed)
+	Office 2008 SP1	2008sp1.pkg	sha1:d9ca498b376f8a715ed7fb2b81fb13ee9ca39bc7
+
+#	Repackage/replace if future updates released		
+	Office 12.2.8	Office2008-1228.pkg	sha1:25b539be6271350c01bb7c97433e30aeaa8d1751
+
+#	Original download, Mosen patched
+	Office 2008 12.2.9 Update	Office 2008 12.2.9 Update.mpkg	sha1:3a03812572243eec00c46c51d91557ee023ce0a7
+	Office 2008 12.3.0 Update	Office 2008 12.3.0 Update.mpkg	sha1:edd03ebf3d687dd10ff8d5922633d4a743a8f8e3
+	Office 2008 12.3.1 Update	Office 2008 12.3.1 Update.mpkg	sha1:6742eaa91fe9f92ebc78e7650809a136e70602bf
+
+# 	Original download works without patching
+	AutoUpdate Installer	AutoUpdate Installer.mpkg	sha1:93787af74b98b9704254170b7869f56832fe71e2
+	Error Reporting Installer	Error Reporting Installer.mpkg	sha1:451ff11e7ce72d0e080b66719f5364cff1d29529
+	
+#	Original download, Mosen patched
+# any future office updates (released after 22/9/11) should go here 
+
+	Celtx-2.9.1	Celtx-2.9.1.dmg	sha1:4d603d7b94e29a2bcb1dd48c07971775017e8fc0
+
+	DropCopy 1.6.4	DropCopy 1.6.4.dmg	sha1:48bac684459af6de74cda1327c9497c3ca798bbc
+
+# Last version compatible with 10.5
+#	MindNode-163	MindNode-163.dmg	sha1:4c125cca8b2ec0de18e615cab6149be8c5975a85
+
+	MindNode	MindNode.dmg	sha1:a15c7829edf2b2f9036fc545b1a852097cb5a4f9
+	
+#	Stupidly, seems to PREVENT DivX AVI's from playing
+#	DivX for Mac	DivX for Mac.pkg	sha1:506a06d79034271e26fddba88bb73e6fe8cbc884
+
+	vlc-1.1.11	vlc-1.1.11.dmg	sha1:6bfc802e7e0a4a2128024be254cb15edcf086294
+
+#	Installed here for QT7 Pro (because separate VL can't be packaged)
+	fcplicense	fcplicense.pkg	sha1:9ef155989e45de480dc127f2c19d823cc04e4247
+
+
+Software Settings:
+
+	firstrun-office	firstrun-office.pkg	sha1:b6bc9c72a106b30d8825ca26a8e881d8849c9c04

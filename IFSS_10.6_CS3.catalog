@@ -1,0 +1,30 @@
+# Starts with image including all common office etc. software
+# Installs all production system software except for FCP and stock media
+
+include-file:	IFSS_10.6_prod.catalog
+
+# Comment these out unless building this specific image
+Output Volume Name = IFSS HD
+Output File Name = IFSS-10_6_CS3-1.3.0
+
+System Settings:
+
+# Install appropriate dock
+	setdock-cs3	setdock-cs3.pkg	sha1:8ef7df1e8a83e1d3b8c9e1172623a635cbee0709
+
+
+Third Party Software:
+
+#	CS3
+
+	CS3 Base Install	CS3 Base Install.pkg	sha1:054771ea2504b841b052ab47f87b1a8bdc49c6c3
+	CS3 Update	CS3 Update.pkg	sha1:c891c300c1ebcb8e8b344cf73ae10daa4a7bdb77
+	CS3 Update 2	CS3 Update 2.pkg	sha1:74dbba7be803d8c0affceda07bd594ebf338aa2e
+
+#	Wacom Drivers
+	Install Pen Tablet	Install Pen Tablet.pkg	sha1:891c8b9ab838bc96d9aedd883dcea061a79be715
+	Install Wacom Tablet	Install Wacom Tablet.pkg	sha1:c225a8a31cd234a2196b186041d260e568ab94ae
+
+
+Software Settings:
+

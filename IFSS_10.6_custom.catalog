@@ -1,0 +1,61 @@
+# Starts with any image -- uncomment include-file below
+#
+# Used to produce an image with a custom name
+# Useful is temporarily editing an include to test something
+# without overwriting a good image
+
+#include-file:	IFSS_10.6_basic.catalog
+include-file:	IFSS_10.6_office.catalog
+#include-file:	IFSS_10.6_prod.catalog
+#include-file:	IFSS_10.6_CS3.catalog
+#include-file:	IFSS_10.6_edit.catalog
+
+# Comment these out if chaining this into another image
+# Or edit as required to produce a custom/test image
+Output Volume Name = IFSS HD
+Output File Name = IFSS-10_6.7_custom-1.0.11-office-test
+
+System Settings:
+
+#	Install dock
+#	setdock-edit	setdock-edit.pkg	sha1:7975f67c0cef1154d7b62504b1283cf0d781a34e
+
+#	Install cleanup scripts -- only needed for lab computers
+	cleanups	cleanups.mpkg	sha1:d880b933b6d6b10faff92c81165ffb85190125d5
+
+#	Only needed for when XDCAM is installed
+#	fixFAMdriver	fixFAMdriver.mpkg	sha1:3e6036be3aba2c8ff9ab71fb7bc9735fbfe9950c
+
+
+
+
+
+Third Party Software:
+
+#	Test of new/updated packages (from edit build)
+
+#	Install Pen Tablet	Install Pen Tablet.pkg	sha1:891c8b9ab838bc96d9aedd883dcea061a79be715
+#	Install Wacom Tablet	Install Wacom Tablet.pkg	sha1:c225a8a31cd234a2196b186041d260e568ab94ae
+
+#	fcpfreeplugins	fcpfreeplugins.pkg	sha1:65d9772d6b7992667fe7dda4edbdbf6b2aee676c
+
+#	Pref_Man	Pref_Man.dmg	sha1:9b290bb8b3bc94ee0b9129d2e75261e5f0a5fb16
+	
+#	5DtoRGB	5DtoRGB.dmg	sha1:16fd1740e2e5fac2bdd90b866ccd9938f323d396
+	
+#	AVCCAM Restorer	AVCCAM Restorer.dmg	sha1:d937ad3420ba8d5bc37bfa5d10b6057784b6e5a2
+
+#	To test cleanup routines
+	Make Temp Trash	MakeTempTrash.pkg	sha1:bac8abbe01c0a567cfd822bb22104b67f8ba21b7
+
+	Adobe Air 2.7.1	adobeair271.pkg	sha1:12e0a1515b49a42daa9f6cc7cb30063e2cbc5c29
+	Kuler	Kuler.pkg	sha1:7aff0967730e8225c6dba27bf12c89e9f1bc4cf2
+
+	Evom	Evom.dmg	sha1:6054e6d72904aa3c327dfaa9297b953492e50845
+	evomsupport	evomsupport.pkg	sha1:339e5c1bbd6c8fa7a54569472b99672613589aa2
+
+
+
+Software Settings:
+
+	STPprefs	STPprefs.pkg	sha1:60a0de3d9f0c576ec2b2cae83dc61f1008bbd009

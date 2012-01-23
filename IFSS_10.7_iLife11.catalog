@@ -1,0 +1,78 @@
+# Starts with image including all common office etc. software
+# Installs all production system software except for FCP and stock media
+
+include-file:	IFSS_10.7_basic.catalog
+
+# Comment these out unless building this specific image
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_7_iLife-1.0.0
+
+System Settings:
+
+# Install appropriate dock
+#	
+
+
+Third Party Software:
+
+# iLife '11
+
+# From http://pastie.textmate.org/private/9f7hgsou7x7y3bcw1xla
+
+# All iLife '11 pkg's in order
+# PLEASE NOTICE - 
+#	iLife '11 requires 10.6.3, but not all packages in the installer are necessary for 10.6.6
+# FOLLOW THESE INSTRUCTIONS FOR PREPARATION - 
+# 	mount the iLife disc 
+#	right-click iLife.pkg alias and choose 'show original'
+#	copy all pkgs into your instadmg/InstallerFiles/InstaUp2DatePackages folder except for:
+#		-AppleIntermediateCodec
+#		-iLifeAudioAnalysis
+#		-iLifeRegistrationPost
+#		-iMovie_PreviousFolder
+#		-ProAppRuntimeFlat
+#		-RAWCameraUpdate3
+
+## All installations require the following 3 packages
+	iLife Registration	iLifeRegistration.pkg	sha1:5209d6853fbac84dd6dc6ba1eb9b7fa2942cdbe2
+	iLife Cookie	iLifeCookie.pkg	sha1:a3a9874ee35ce5ee5724680baa30d450d60ac5e0
+
+## Comment out any of the below products if not needed
+## iPhoto
+	iLife Slideshow	iLifeSlideshow_v2.pkg	sha1:dba03b76bd6de3914582da14127bbe1d5da3e950
+	iLife Face Recognition	iLifeFaceRecognition.pkg	sha1:d8d2490423c260f0f554a6e9668a25b5f8255bb6
+	iPhoto 9	iPhoto.pkg	sha1:fe68464cba8642213f631bd0be33c696d6155510
+	iPhoto Content	iPhotoContent.pkg	sha1:a44817e1d5890ffb8dbf450cffb98c0e80951821
+	iPhoto Library Upgrade Tool	iPhotoLibraryUpgradeTool.pkg	sha1:32b03b66816a2afa5345e9474ee323eb2b65af03
+
+## iMovie
+	iMovie 9	iMovie.pkg	sha1:6b06d4718416ab322c5af5b93103f54e70a28314
+
+## iDVD
+	iDVD 7	iDVD.pkg	sha1:e78a63bb23b2bffeae48efb504826a9e22c6eb2c
+
+## Garageband
+	GarageBand 6	GarageBand.pkg	sha1:b699679e947ae2cbbb922b99a44fac0dc3f2b80c
+	GarageBand Instruments	GarageBand_Instruments.pkg	sha1:559b05af9d8a7b3262267957311ab941863e3a34
+	GarageBand Factory Content	GarageBandFactoryContent.pkg	sha1:e4dfeb2b9e7b4e4d42be3ac4b81a6fbfa28c1c04
+	GarageBand LTPContent	GarageBand_LTPContent.pkg	sha1:6e24174252066c35f1d2f60c0a78d0b34f5c2044
+	GarageBand Loops	GarageBand_Loops.pkg	sha1:80600216d55dd026b5d9da0385a8997676d08cb3
+	GarageBand Magic Content	GarageBand_MagicContent.pkg	sha1:129b3373fb7a388a527f335d9de17ed65b469084
+	iLife Sound Effects Loops	iLifeSoundEffects_Loops.pkg	sha1:c1d8a0d19fac8a25e99948225bc5463e9c2f1c4b
+
+## iWeb
+	iWeb 3	iWeb.pkg	sha1:54b211974b2436ae4ba53d9ebb7409e2e5536748
+
+
+# iLife '11 Updates as of October 12, 2011
+
+	iWeb 3.0.4	http://support.apple.com/downloads/DL1413/en_US/iWeb304.dmg	sha1:4cd66325ecbc90614ddce5e371dafc49f5624bb2
+	iDVD 7.1.2	http://support.apple.com/downloads/DL1414/en_US/iDVD7.1.2Update.dmg	sha1:fa370a94f12a31fe1a107d4624bfe580877d25c2
+	Digital Camera Raw Compatibility Update 3.9	http://support.apple.com/downloads/DL1473/en_US/RAWCameraUpdate3.9.dmg	sha1:835a6c9c17dffe66a9dbab1a49da99283a55504b
+	GarageBand 6.0.4	http://support.apple.com/downloads/DL1410/en_US/GarageBand6.0.4Update.dmg	sha1:f69dd6f96c8b4aae513ee1de419fff19ad5d76aa
+	iMovie 9.0.4	http://support.apple.com/downloads/DL1412/en_US/iMovie9.0.4Update.dmg	sha1:5b2d0742bb5474746296f593b94313c64c73325d
+	iPhoto 9.1	http://support.apple.com/downloads/DL1322/en_US/iPhoto9.1Update.dmg	sha1:d4f3f38ff4000d30bd0c6ea4c4ef53497f62628a
+	iPhoto 9.2.1	http://support.apple.com/downloads/DL1462/en_US/iPhoto9.2.1Update.dmg	sha1:9b26f8ad324df8db36f8de51110d803fa1252cea
+
+Software Settings:
+

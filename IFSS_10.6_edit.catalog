@@ -1,0 +1,123 @@
+# Starts with production or CS3 image
+# Installs all editing packages (to create very large image)
+
+# Comment out according to specific version being built
+
+# For PT version, edit basic catalog to include 10.6.7 vanilla
+# For Lab 2 version, edit Basic catalog (firstbootl2 connects to IFSS3)
+
+#include-file:	IFSS_10.6_CS3.catalog
+# For RED version don't install CS3
+include-file:	IFSS_10.6_prod.catalog
+ 
+# Comment these out unless building this specific image
+Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_6_edit-1.2.2-Lab1
+#Output File Name = IFSS-10_6_edit-1.2.2-Lab2
+Output File Name = IFSS-10_6_edit-1.3.0-RED
+#Output File Name = IFSS-10_6_edit-1.2.2-MAS
+#Output File Name = IFSS-10_6_7_edit-1.3.0-Lab2
+
+System Settings:
+
+#	Install appropriate dock
+	setdock-edit	setdock-edit.pkg	sha1:7975f67c0cef1154d7b62504b1283cf0d781a34e
+
+#	Install cleanup scripts -- only needed for lab computers
+	cleanups	cleanups.mpkg	sha1:d880b933b6d6b10faff92c81165ffb85190125d5
+
+#   Standard FAM Installer doesn't work in image - this should reinstall/fix on first login
+	fixFAMdriver	fixFAMdriver.mpkg	sha1:3e6036be3aba2c8ff9ab71fb7bc9735fbfe9950c
+
+
+Third Party Software:
+
+
+#	FCP
+
+	IFSSFinalCutStudio	IFSSFinalCutStudio.mpkg	sha1:d9c5a8d8f9bd1b6fb65473a1022cef6d3dc89a64
+#	Already installed in 10.6_office include-file
+#	fcplicense	fcplicense.pkg	sha1:9ef155989e45de480dc127f2c19d823cc04e4247
+
+#	FCP updates
+
+#	ProApplicationsUpdate2008-01	ProApplicationsUpdate2008-01.mpkg	sha1:9b9fb1195ed63f96dcd3fc95bab79f5f855f65f3
+#	ProApplicationsUpdate2008-02	ProApplicationsUpdate2008-02.mpkg	sha1:e1e1938f2e07790f9e5e7e4f6e6b0a60cf2f1549
+#	ProApplicationsUpdate2008-03	ProApplicationsUpdate2008-03.mpkg	sha1:8487d398f14b96bb8ff00bc25d80bfbce0ee0158
+#	ProApplicationsUpdate2008-04	ProApplicationsUpdate2008-04.mpkg	sha1:8052482d5a1da61630720e329368c7ded5498a1a
+#	ProApplicationsUpdate2008-05	ProApplicationsUpdate2008-05.mpkg	sha1:06aee5b3273926d10e410e9a668da5822ba50a94
+#	CinemaToolsUpdate4.0.1	CinemaToolsUpdate4.0.1.pkg	sha1:3f0a7c27c917f637387e0cd637af578220c75a18
+#	DVDStudioPro4.2.1Update	DVDStudioPro4.2.1Update.pkg	sha1:d95165e66e67993fe03c420e6ddfa46df1189e87
+#	Motion302Update	Motion302Update.pkg	sha1:89a88291a86c93c446fdc62225b3def4f2d317cb
+#	SoundtrackPro202Update	SoundtrackPro202Update.pkg	sha1:0d5fc92533427d97852adbcd1e663168499fa182
+#	FinalCutPro6.0.6Update	FinalCutPro6.0.6Update.pkg	sha1:6b60327553c336fe55089edc749200ffcfe0cc26
+
+#	Alternative to individual updates -- all in one package
+	fcpupdateall	fcpupdateall.pkg	sha1:bc02710aaf9df1b0d56ae9be08bde5fdbb0edff4
+
+
+	Contour Shuttle	Contour Shuttle.pkg	sha1:e98b1d575d04df80b97eefb11ad14ee4d4edcc59
+	
+	Make Temp Trash	MakeTempTrash.pkg	sha1:bac8abbe01c0a567cfd822bb22104b67f8ba21b7
+
+# To be installed after Final Cut Studio	
+	XDCAM Transfer	XDCAM Transfer 2.12.mpkg	sha1:a7609de5880d4bda23d014f680b7b4113290c827
+# Drivers for XDCAM
+	XDCAM Drive Software	XDCAM Drive Software.pkg	sha1:c194008f5235b5be5cae1e65dd7f0267c993b444
+
+# FAM driver issue now dealt with differently, through script on first run
+# Standard FAM Installer doesn't work in image and FAM Driver Tool in mpkg already installed
+#	FAM Installer	FAM Installer.mpkg	sha1:9320627ac2aae42bbb7fc6aa9776c0f727b62cc0
+#	famdriver	famdriver.pkg	sha1:045c5d99ceb7f2136e81b8fe275fea26cf350244
+
+	RED Final Cut Studio Installer	RED Final Cut Studio Installer.mpkg	sha1:6820b8f1ac9d6ee50b174eb68c8d49914335eeac
+
+#	Canon DSLR plugin for FCP
+	Canon E1	Canon E1.pkg	sha1:6d6affac8a99f07f579064ecafd9df91c65eae7a
+	
+
+#	For PT/Standard Lab version
+#	All Magic Bullet Software -- for all apps
+#	completeMB	completeMB.pkg	sha1:d1f014d04bc7bdee0a182bb9ba056e2e50f8f4b1
+
+# For RED version
+#	CS4
+#	completeMB-CS4	completeMB-CS4.pkg	sha1:e07aa20f79caf9e3af9b973bb2c67ad725b26cdc
+
+
+#	Various free plugins
+	fcpfreeplugins	fcpfreeplugins.pkg	sha1:65d9772d6b7992667fe7dda4edbdbf6b2aee676c
+
+#	Version 3 has update issues, expiring beta
+	Pref_Man_Tiger	Pref_Man_Tiger.dmg	sha1:da5aa0b94f299d62fb443a01d16233b9f5495ce9
+#	Pref_Man	Pref_Man.dmg	sha1:73975a3f0f08b58b6a2917079e43946371e838ef
+
+	ClipBrowser	ClipBrowser.pkg	sha1:b95fcb7fc32a9c51cade4447cb403c01820e6277
+
+	5DtoRGB	5DtoRGB.dmg	sha1:16fd1740e2e5fac2bdd90b866ccd9938f323d396
+	
+	AVCCAM Restorer	AVCCAM Restorer.dmg	sha1:d937ad3420ba8d5bc37bfa5d10b6057784b6e5a2
+	
+# For RED version
+#	AJA
+#	RED CS4 support
+#	AJA/Kona LHe drivers
+#	RED CineX
+#	R3D Data Manager
+#	Resolve Lite
+
+#	For PT and RED versions
+#	Rename computer and host
+#	Custom desktop pics
+#	Automatic Duck
+
+	IFSS Stock Media	IFSS Stock Media.pkg	sha1:9cde031ec63ff176ca2424afbbbfeb332f1cf977
+# Added in separately for easier updating
+	ifsslogos	ifsslogos.pkg	sha1:0022576e739f3606341a185c857030803e96a891
+
+
+Software Settings:
+
+	firstrun-fcp	firstrun-fcp.pkg	sha1:d2c720abe40d2eb9a17032378b40403b198ca3a1
+	STPprefs	STPprefs.pkg	sha1:60a0de3d9f0c576ec2b2cae83dc61f1008bbd009
+

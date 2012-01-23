@@ -1,0 +1,80 @@
+# Starts with production image
+# Installs all editing packages (to create very large image)
+
+include-file:	IFSS_10.6_prod.catalog
+ 
+Output Volume Name = IFSS HD
+Output File Name = IFSS-10_6_RED-1.0.0
+
+System Settings:
+
+# Install appropriate dock
+	setdock-edit	setdock-edit.pkg	sha1:0eb4381d9e2b4470b2e71c4f73ae36422d4f0b32
+
+Third Party Software:
+
+
+#	FCP
+
+	IFSSFinalCutStudio	IFSSFinalCutStudio.mpkg	sha1:3c166f2c4d827526ef68acb2c0c21726f0f55866
+	fcplicense	fcplicense.pkg	sha1:9ef155989e45de480dc127f2c19d823cc04e4247
+
+#	FCP updates
+
+#	ProApplicationsUpdate2008-01	ProApplicationsUpdate2008-01.mpkg	sha1:9b9fb1195ed63f96dcd3fc95bab79f5f855f65f3
+#	ProApplicationsUpdate2008-02	ProApplicationsUpdate2008-02.mpkg	sha1:e1e1938f2e07790f9e5e7e4f6e6b0a60cf2f1549
+#	ProApplicationsUpdate2008-03	ProApplicationsUpdate2008-03.mpkg	sha1:8487d398f14b96bb8ff00bc25d80bfbce0ee0158
+#	ProApplicationsUpdate2008-04	ProApplicationsUpdate2008-04.mpkg	sha1:8052482d5a1da61630720e329368c7ded5498a1a
+#	ProApplicationsUpdate2008-05	ProApplicationsUpdate2008-05.mpkg	sha1:06aee5b3273926d10e410e9a668da5822ba50a94
+#	CinemaToolsUpdate4.0.1	CinemaToolsUpdate4.0.1.pkg	sha1:3f0a7c27c917f637387e0cd637af578220c75a18
+#	DVDStudioPro4.2.1Update	DVDStudioPro4.2.1Update.pkg	sha1:d95165e66e67993fe03c420e6ddfa46df1189e87
+#	Motion302Update	Motion302Update.pkg	sha1:89a88291a86c93c446fdc62225b3def4f2d317cb
+#	SoundtrackPro202Update	SoundtrackPro202Update.pkg	sha1:0d5fc92533427d97852adbcd1e663168499fa182
+#	FinalCutPro6.0.6Update	FinalCutPro6.0.6Update.pkg	sha1:6b60327553c336fe55089edc749200ffcfe0cc26
+
+#	Alternative to individual updates -- all in one package
+	fcpupdateall	fcpupdateall.pkg	sha1:bc02710aaf9df1b0d56ae9be08bde5fdbb0edff4
+
+
+	Contour Shuttle	Contour Shuttle.pkg	sha1:e98b1d575d04df80b97eefb11ad14ee4d4edcc59
+	
+	Make Temp Trash	MakeTempTrash.pkg	sha1:bac8abbe01c0a567cfd822bb22104b67f8ba21b7
+
+# To be installed after Final Cut Studio	
+	XDCAM Transfer	XDCAM Transfer 2.12.mpkg	sha1:660190980d531ddab2a306bcb0b6b1c26bf77dc1
+# Drivers for XDCAM
+	XDCAM Drive Software	XDCAM Drive Software.pkg	sha1:c194008f5235b5be5cae1e65dd7f0267c993b444
+# Standard FAM Installer doesn't work in image and FAM Driver Tool in mpkg already installed
+#	FAM Installer	FAM Installer.mpkg	sha1:9320627ac2aae42bbb7fc6aa9776c0f727b62cc0
+	famdriver	famdriver.pkg	sha1:045c5d99ceb7f2136e81b8fe275fea26cf350244
+
+
+	RED Final Cut Studio Installer	RED Final Cut Studio Installer.mpkg	sha1:6820b8f1ac9d6ee50b174eb68c8d49914335eeac
+
+#	Canon DSLR plugin for FCP
+	Canon E1	Canon E1.pkg	sha1:6d6affac8a99f07f579064ecafd9df91c65eae7a
+
+#	CS4
+#	AJA
+
+
+#	All Magic Bullet Software -- for all apps
+#	Best not installed now until CS4 is packaged (if ever)
+#	Manually install package after installing CS4 from DVDs
+#	completeMB-CS4	completeMB-CS4.pkg	sha1:e07aa20f79caf9e3af9b973bb2c67ad725b26cdc
+
+	Pref_Man	Pref_Man.dmg	sha1:e72812cd267e36abefb81c152fd118716f7789b6
+	ClipBrowser	ClipBrowser.pkg	sha1:b95fcb7fc32a9c51cade4447cb403c01820e6277
+
+#	RED CineX
+#	Clipfinder
+#	R3D Data Manager
+#	Storm beta
+
+#	Automatic Duck
+
+	IFSS Stock Media	IFSS Stock Media.pkg	sha1:9cde031ec63ff176ca2424afbbbfeb332f1cf977
+
+Software Settings:
+
+	firstrun-fcp	firstrun-fcp.pkg	sha1:d2c720abe40d2eb9a17032378b40403b198ca3a1

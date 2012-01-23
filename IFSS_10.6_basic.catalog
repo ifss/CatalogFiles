@@ -1,0 +1,96 @@
+# Starts with 10.6 vanilla image
+# Creates ladmin and IFSS users and sets basic preferences
+# Installs and updates some standard software
+
+# For Lab 2 computers (connect to IFSS3 Airport) edit firstboot below
+
+# For PT version, include 10.6.7 vanilla
+#include-file:	IFSS_10.6_vanilla.catalog
+include-file:	IFSS_10.6.7_vanilla.catalog
+
+# Comment these out unless building this specific image
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_6_7_basic-1.0.0
+
+
+# NOTE: NEW UPDATES TO CHECK/ADD TO HERE OR VANILLA
+
+# Sec Update 2011-006
+# Safari 5.1.1 (10.6.8)
+
+
+System Settings:
+
+	ClearRegistration	clearReg.dmg	sha1:0cf3080cc0179fe63883e40a180f6a92b573fd70
+
+	# Remove App Store application (10.6.7)
+	NoMAS	NoMAS.pkg	sha1:86aa4aba4d9eb3e806ab6711cf8e653c0244352a
+	
+	# Note - install basic dock only at this stage: need to update throughout build train
+	Copy Prefs	CopyPrefs.pkg	sha1:920c442654ef3c9f666f6444dd437557607a6ab7
+	
+	# SetPics script won't run, but this will install required pics
+	Set Pics	SetPics.pkg	sha1:f0c1da58caa4c290968d4b91f12969b77424ab00
+	
+	create local admin	createladminUser.pkg	sha1:1f994384fdc2c7e1ecca024aabede07935164c28
+	create IFSS user	createIFSSUser.pkg	sha1:8f561c468b96eea1f1c29559162a952b500a7584
+	
+	Copy MCX	CopyMCX.pkg	sha1:bb56f4a0c3eebe6a9e9d7e386480f43a59b137a1
+
+	enableAD	enableAD.pkg	sha1:fddd573ebf880d6f0f504ec6450c2b33e44448f6
+	
+	firstboot	firstboot.mpkg	sha1:790fa15c45a19d90d36f509b5841c9c61b709ff8
+#	Use this version for Lab 2 computers (connect to IFSS3 Airport)
+#	firstbootl2	firstbootl2.mpkg	sha1:612600194fd874f48bc0c84c6a9a99236ee3a0cc	
+
+	# For Ricoh Aficio 2022 printer
+	#2022prefs	2022prefs.pkg	sha1:11cea7c95eca1c4dc3752032434bc4341741e5a2
+
+	initSettings	initSettings.mpkg	sha1:3c11c811fc0d34a8f0a59962b24d6548c7f02269
+	resetMCX	resetMCX.mpkg	sha1:697796d54d83bdd1aa78686d79244e563473866c
+
+#	Set software update preferences (checking off)	
+#	softwareupdate	softwareupdate.pkg	sha1:10097845982e8b5ffc03a912ce9c0c5bf4a5a5c5
+
+
+Third Party Software:
+
+#	Use Star Deploy to deploy updates and new packages/apps/files 
+	StarDeploy v1.2.5	StarDeploy v1.2.5.pkg	sha1:f55a5c4fa6766f4bb38c51964770088f69c2d639
+	StarDeploy Prefs	sdPrefs.pkg	sha1:034930b81f2655a9381afb4850f38a6047c21ad6
+
+	Flip4Mac 2.3.8.1	Flip4Mac WMV.mpkg	sha1:0b88dc9fb85398df023fa93b03673da66f9d96db
+
+# iLife 09
+
+	iLife 09	iLife09.mpkg	sha1:d21feae38398b52b982a5586ba0b1168534343ce
+
+# iLife 09 Updates
+
+	iPhoto 8.1.2	http://support.apple.com/downloads/DL970/en_US/iPhoto812.dmg	sha1:b7cdf308a45a2ce5b8e1cbf3a78cbaa17dc62c28
+	iMovie 8.0.6	http://support.apple.com/downloads/DL859/en_US/iMovie_806.dmg	sha1:5b63ad631d7a9b9e668db5cb1edf4d421c8af87f
+	GarageBand 5.1	http://support.apple.com/downloads/DL862/en_US/GarageBand51.dmg	sha1:7c771583c826c8c70e5c5f01d925e28636d0364d
+#	# Doh! GB needs the loops and instruments!
+#	# Seems to be in iLife package, but not showing in GB -- problem is something else
+#	#Garage Band Extra Content	GarageBandExtraContent.pkg	sha1:9d0b4f0ada60a5387580c2998d37ef7bc2418437
+
+# iLife '11
+
+#	iLife 11 Installer	iLife 11 Installer.pkg	sha1:7bbc522e69866849eb6fa53596ce7c83b9bbdb9a
+
+# iLife '11 Updates as of 4/21/2011
+
+
+#	iPhoto 9.1	http://support.apple.com/downloads/DL1322/en_US/iPhoto9.1Update.dmg	sha1:d4f3f38ff4000d30bd0c6ea4c4ef53497f62628a
+#	iPhoto 9.1.5	http://support.apple.com/downloads/DL1411/en_US/iPhoto9.1.5Update.dmg	sha1:ea30107d63d79192058ae7bf582a60e076c5f501
+#	iMovie 9.0.4	http://support.apple.com/downloads/DL1412/en_US/iMovie9.0.4Update.dmg	sha1:5b2d0742bb5474746296f593b94313c64c73325d
+#	GarageBand 6.0.4	http://support.apple.com/downloads/DL1410/en_US/GarageBand6.0.4Update.dmg	sha1:f69dd6f96c8b4aae513ee1de419fff19ad5d76aa
+
+# Old iLife app updates (iLife 09 and 11)
+
+	#iDVD 7.0.4	http://support.apple.com/downloads/DL843/en_US/iDVD704.dmg	sha1:d9b6fd4b1a4c8f875dc1a8ca3c8dd31ebae5e1c0
+	iDVD 7.1.2 Update	http://support.apple.com/downloads/DL1414/en_US/iDVD7.1.2Update.dmg	sha1:fa370a94f12a31fe1a107d4624bfe580877d25c2
+	iWeb 3.0.4	http://support.apple.com/downloads/DL1413/en_US/iWeb304.dmg	sha1:4cd66325ecbc90614ddce5e371dafc49f5624bb2
+
+
+Software Settings:
