@@ -4,19 +4,22 @@
 include-file:	IFSS_10.7_office.catalog
 
 # Comment these out unless building this specific image
-#Output Volume Name = IFSS HD
-#Output File Name = IFSS-10_7_prod-1.0.0
+Output Volume Name = IFSS HD
+Output File Name = IFSS-10_7_prod-1.0.0
 
 System Settings:
 
 # Install appropriate dock
 	setdock-prod	setdock-prod.pkg	sha1:34cc7088524732769d6242f0a14dd3fe4038d3e2
 
+# Move this to edit catalog later (for lab computers)
+	policybanner	policybanner.pkg	sha1:c65a908937d4fe0b1770185c809d593f6190ecec
+
 
 Third Party Software:
 
-#	Already installed with OS via installer choices
-#	QuickTimePlayer 7.6.6 SnowLeopard	http://support.apple.com/downloads/DL923/en_US/QuickTimePlayer7.6.6_SnowLeopard.dmg	sha1:65e7456d9bb8697da7a2cda8842b29160123913c
+#	Needs to be installed for Lion
+	QuickTimePlayer 7.6.6 SnowLeopard	http://support.apple.com/downloads/DL923/en_US/QuickTimePlayer7.6.6_SnowLeopard.dmg	sha1:65e7456d9bb8697da7a2cda8842b29160123913c
 
 	VideoSpec_0.8.7a	VideoSpec_0.8.7a.dmg	sha1:46b6a28916f7cd11b7d0a813041b3d33933abe02
 	aspectRatio_1.12	aspectRatio_1.12.dmg	sha1:5c2324cdc9ea65c82022062d3082b2a52ba1a0ea
