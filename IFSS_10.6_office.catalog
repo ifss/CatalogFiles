@@ -1,7 +1,8 @@
 # Starts with basic image including updates, users, preferences etc
-# Installs all common software for non-editing systems
+# Installs all common software for non-editing (office) systems
 
 include-file:	IFSS_10.6_basic.catalog
+#include-file:	IFSS_10.7_MSOffice11.catalog
  
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
@@ -48,7 +49,7 @@ Third Party Software:
 
 # 	Original download works without patching
 	AutoUpdate Installer	AutoUpdate Installer.mpkg	sha1:93787af74b98b9704254170b7869f56832fe71e2
-	Error Reporting Installer	Error Reporting Installer.mpkg	sha1:451ff11e7ce72d0e080b66719f5364cff1d29529
+	Error Reporting Installer	Error Reporting Installer.mpkg	sha1:fb4eceed5423aa9709f0d567cbb0fa604b204e3a
 	
 #	Original download, Mosen patched
 # any future office updates (released after 22/9/11) should go here 

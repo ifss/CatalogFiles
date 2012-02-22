@@ -4,8 +4,8 @@
 include-file:	IFSS_10.7_office.catalog
 
 # Comment these out unless building this specific image
-Output Volume Name = IFSS HD
-Output File Name = IFSS-10_7_prod-1.0.0
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_7_prod-1.0.0
 
 System Settings:
 
@@ -41,6 +41,9 @@ Third Party Software:
 	evomsupport	evomsupport.pkg	sha1:339e5c1bbd6c8fa7a54569472b99672613589aa2
 
 	avccamviewer_1.2.sl	avccamviewer_1.2.sl.mpkg	sha1:3e1c035d1bbd7ad76d7d3ba315bd7120c4f146e0
+
+# Just here for testing at the moment
+#	AvidMediaComposer	AvidMediaComposer.pkg	sha1:5fc9d6c24c497087f5bfcd06e13f3336eb597303
 
 
 Software Settings:

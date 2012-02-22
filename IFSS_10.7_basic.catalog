@@ -32,7 +32,7 @@ System Settings:
 
 	enableAD	enableAD.pkg	sha1:fddd573ebf880d6f0f504ec6450c2b33e44448f6
 	
-	firstbootLionLab1	firstbootLionLab1.mpkg	sha1:c4e5be7aca03c935fdd271a25ec575f80c7e7731
+	firstbootLionLab1	firstbootLionLab1.mpkg	sha1:978c1befcfc5d3e15cbd7fe7003c1c306153a65d
 #	Use this version for Lab 2 computers (connect to IFSS3 Airport)
 #	firstbootl2	firstbootl2.mpkg	sha1:612600194fd874f48bc0c84c6a9a99236ee3a0cc	
 

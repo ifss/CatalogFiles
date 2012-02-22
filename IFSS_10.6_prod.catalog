@@ -1,7 +1,8 @@
 # Starts with image including all common office etc. software
 # Installs all production system software except for FCP/Adobe and stock media
 
-include-file:	IFSS_10.6_office.catalog
+#include-file:	IFSS_10.6_office.catalog
+include-file:	IFSS_10.6.7_office.catalog
 
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
@@ -18,21 +19,25 @@ Third Party Software:
 #	Already installed with OS via installer choices
 #	QuickTimePlayer 7.6.6 SnowLeopard	http://support.apple.com/downloads/DL923/en_US/QuickTimePlayer7.6.6_SnowLeopard.dmg	sha1:65e7456d9bb8697da7a2cda8842b29160123913c
 
-	VideoSpec_0.8.7a	VideoSpec_0.8.7a.dmg	sha1:46b6a28916f7cd11b7d0a813041b3d33933abe02
+	TextWrangler_3.5.3	TextWrangler_3.5.3.dmg	sha1:f8491b6ec69c4399a26cd1b9c56ac00f144d9c7b
+	iTerm2_v1_0_0	iTerm2_v1_0_0.dmg	sha1:4d0b64d04bb9abfe5774d822ce194f775d5c06c1
+
+	VideoSpec_0.9.4	VideoSpec_0.9.4.dmg	sha1:1e24f2bea9a8c255b7ce229ed7d53463b803b500
 	aspectRatio_1.12	aspectRatio_1.12.dmg	sha1:5c2324cdc9ea65c82022062d3082b2a52ba1a0ea
 	AJADataCalc	AJADataCalc.dmg	sha1:ce027001ac24d72ffdbfe9337d264da70477101b
 
 #	Adobe Air 2.5.1	Adobe Air.pkg	sha1:1149c4c800bc853cdd0ce6051e477653004ddf24
-	Adobe Air 2.7.1	adobeair271.pkg	sha1:12e0a1515b49a42daa9f6cc7cb30063e2cbc5c29
+#	Adobe Air 2.7.1	adobeair271.pkg	sha1:12e0a1515b49a42daa9f6cc7cb30063e2cbc5c29
+	adobeair3_1	adobeair3_1.pkg	sha1:7f2d34b082172df50c92fbbb46f94d97df31edac
 
 	Kuler	Kuler.pkg	sha1:7aff0967730e8225c6dba27bf12c89e9f1bc4cf2
 
-	Perian 1.2.2	Perian-1.2.2.pkg	sha1:53995bc2bfdfe3eb9e5196d2fcfcaf1769b0fc43
+	Perian-1.2.3	Perian-1.2.3.pkg	sha1:65aae2c6b8fe428186fc7b81fd33995a5d4bcfa2
 
-	Google SketchUp 8.0 Installer	Google SketchUp 8.0 Installer.mpkg	sha1:fd11268ec0743e08489619bc41656476ebe5037b
-	Google Earth	GoogleEarthMacNoUpdate-Intel.dmg	sha1:50e7ebf30ba29e3ff7ab505f37a04c1c62c445f8
+	GoogleEarthMacNoUpdate-Intel	GoogleEarthMacNoUpdate-Intel.dmg	sha1:e8984613103c0d3dee87478f9a4ef2e2b191b761
+	Google SketchUp 8.0 Installer	Google SketchUp 8.0 Installer.mpkg	sha1:b0e15b4d5a7a62bd9de08ba9fdb45fe4b7bdc4f2
 
-	JES_Deinterlacer_v3.7.1	JES_Deinterlacer_v3.7.1.dmg	sha1:a2a8bf9b2b2b64097581636a9da3ae1a837c4ca1
+	JES_Deinterlacer_v3.8.1	JES_Deinterlacer_v3.8.1.dmg	sha1:1f0eff66fdba769a986869f548d1034b7ff3e465
 	MPEG Streamclip 1.9.2	MPEG_Streamclip_1.9.2.dmg	sha1:346ea3aef9b7638a0e39e30e494f04010c73afe1
 	Evom	Evom.dmg	sha1:6054e6d72904aa3c327dfaa9297b953492e50845
 	evomsupport	evomsupport.pkg	sha1:339e5c1bbd6c8fa7a54569472b99672613589aa2
@@ -42,5 +47,9 @@ Third Party Software:
 
 Software Settings:
 
+	firstrun-textwrangler	firstrun-textwrangler.pkg	sha1:2fc32591bec9e50032c9d28ec8ecdf2fb741b720
+	textwrangler-cmdlines	textwrangler-cmdlines.pkg	sha1:0a74413a8633b97c42c05e7a6697166df58d3d77
 	firstrun-prod-gs	firstrun-prod-gs.pkg	sha1:36f7a5ae83964688e515259069aab3064cadd07d
 	firstrun-prod-mps	firstrun-prod-mps.pkg	sha1:5bba406819c682ab50090a17d3ca5456bbf00e86
+#	Seems to cause a connection problem for ifss user (okay for ladmin)
+#	kuler-eula	kuler-eula.pkg	sha1:caac535723caef0b5315224b46135fdd6ec976fd

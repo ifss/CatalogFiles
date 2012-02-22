@@ -1,0 +1,39 @@
+# Starts with basic image including updates, users, preferences etc
+# Installs all common software for non-editing (office) systems
+
+#include-file:	IFSS_10.6_basic.catalog
+include-file:	IFSS_10.7_MSOffice11.catalog
+ 
+# Comment these out unless building this specific image
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_6_office-1.0.0
+
+System Settings:
+
+# Install appropriate dock
+	setdock-office	setdock-office.pkg	sha1:3752ce1f541279aaf37208559577ceb0452f6762
+
+	
+Third Party Software:
+
+	Celtx-2.9.1	Celtx-2.9.1.dmg	sha1:4d603d7b94e29a2bcb1dd48c07971775017e8fc0
+
+#	DropCopy 1.6.4	DropCopy 1.6.4.dmg	sha1:48bac684459af6de74cda1327c9497c3ca798bbc
+	DropCopy 1.75	DropCopy 1.75.dmg	sha1:78858668c15c4d79e46c06846e86065ddeaba8d5
+
+# Last version compatible with 10.5
+#	MindNode-163	MindNode-163.dmg	sha1:4c125cca8b2ec0de18e615cab6149be8c5975a85
+	MindNode	MindNode.dmg	sha1:c28ca7bebcfe9d3e5934c054644bee6c72162764
+	
+#	Stupidly, seems to PREVENT DivX AVI's from playing
+#	DivX for Mac	DivX for Mac.pkg	sha1:506a06d79034271e26fddba88bb73e6fe8cbc884
+
+	vlc-1.1.12	vlc-1.1.12.dmg	sha1:28cd5171c834b3dec3166d390be3739016585e69
+
+#	Installed here for QT7 Pro (because separate VL can't be packaged)
+	fcplicense	fcplicense.pkg	sha1:9ef155989e45de480dc127f2c19d823cc04e4247
+
+
+Software Settings:
+
+#	firstrun-office	firstrun-office.pkg	sha1:b6bc9c72a106b30d8825ca26a8e881d8849c9c04

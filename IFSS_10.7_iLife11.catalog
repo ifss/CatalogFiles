@@ -1,7 +1,8 @@
 # Starts with image including all common office etc. software
 # Installs all production system software except for FCP and stock media
 
-include-file:	IFSS_10.7_basic.catalog
+#include-file:	IFSS_10.7_basic.catalog
+include-file:	IFSS_10.6_basic.catalog
 
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
@@ -72,7 +73,10 @@ Third Party Software:
 	GarageBand 6.0.4	http://support.apple.com/downloads/DL1410/en_US/GarageBand6.0.4Update.dmg	sha1:f69dd6f96c8b4aae513ee1de419fff19ad5d76aa
 	iMovie 9.0.4	http://support.apple.com/downloads/DL1412/en_US/iMovie9.0.4Update.dmg	sha1:5b2d0742bb5474746296f593b94313c64c73325d
 	iPhoto 9.1	http://support.apple.com/downloads/DL1322/en_US/iPhoto9.1Update.dmg	sha1:d4f3f38ff4000d30bd0c6ea4c4ef53497f62628a
-	iPhoto 9.2.1	http://support.apple.com/downloads/DL1462/en_US/iPhoto9.2.1Update.dmg	sha1:9b26f8ad324df8db36f8de51110d803fa1252cea
+	iPhoto9.1.5Update	http://support.apple.com/downloads/DL1411/en_US/iPhoto9.1.5Update.dmg	sha1:ea30107d63d79192058ae7bf582a60e076c5f501
+
+#	Requires 10.6.8
+#	iPhoto 9.2.1	http://support.apple.com/downloads/DL1462/en_US/iPhoto9.2.1Update.dmg	sha1:9b26f8ad324df8db36f8de51110d803fa1252cea
 
 Software Settings:
 

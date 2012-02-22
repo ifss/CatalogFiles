@@ -1,6 +1,9 @@
 # Starts with image including all common office etc. software
 # Installs all production system software except for FCP and stock media
 
+#include-file:	IFSS_10.7_basic.catalog
+#include-file:	IFSS_10.7_iLife11.catalog
+#include-file:	IFSS_10.6_iWork.catalog
 include-file:	IFSS_10.7_iWork.catalog
 
 # Comment these out unless building this specific image
@@ -15,13 +18,19 @@ System Settings:
 Third Party Software:
 
 
-#	Office Installer
+#	Office Installer - SP1 patched by hand and distribution.dist modified
+	Microsoft Office 2011 Installer	Office11 Installer.mpkg	sha1:f90c57fbf5e1e64b766481a0ff9789ccfcaeab9b
 
-#	Updates, Mosen patched
+# 	Original download works without patching
+	AutoUpdate Installer	AutoUpdate Installer.mpkg	sha1:93787af74b98b9704254170b7869f56832fe71e2
+	Error Reporting Installer	Error Reporting Installer.mpkg	sha1:fb4eceed5423aa9709f0d567cbb0fa604b204e3a
 
+#	Updates, Mosen patched (both patches)
+	Office 2011 14.1.4 Update	Office 2011 14.1.4 Update.mpkg	sha1:2a1ed365635b4a96d27a29f190ed800be0857e14
 
 
 Software Settings:
 
-#	firstrun-office	firstrun-office.pkg	sha1:b6bc9c72a106b30d8825ca26a8e881d8849c9c04
-
+#	Register and set first run prefs
+	office2011reg	office2011reg.pkg	sha1:766fd8a35d85b1bfb2275911b56bdaa2b19fb894
+#	office2011firstrun	office2011firstrun.pkg	sha1:e40e65ec8c252cf46fbfeb1c10bac63a30dc8338

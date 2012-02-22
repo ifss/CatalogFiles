@@ -6,25 +6,25 @@
 # For PT version, edit basic catalog to include 10.6.7 vanilla
 # For Lab 2 version, edit Basic catalog (firstbootl2 connects to IFSS3)
 
-#include-file:	IFSS_10.6_CS3.catalog
+include-file:	IFSS_10.6_CS3.catalog
 # For RED version don't install CS3
-include-file:	IFSS_10.6_prod.catalog
+#include-file:	IFSS_10.6_prod.catalog
  
 # Comment these out unless building this specific image
 Output Volume Name = IFSS HD
 #Output File Name = IFSS-10_6_edit-1.2.2-Lab1
 #Output File Name = IFSS-10_6_edit-1.2.2-Lab2
-Output File Name = IFSS-10_6_edit-1.3.0-RED
+Output File Name = IFSS-10_6_edit-1.4.1
 #Output File Name = IFSS-10_6_edit-1.2.2-MAS
 #Output File Name = IFSS-10_6_7_edit-1.3.0-Lab2
 
 System Settings:
 
 #	Install appropriate dock
-	setdock-edit	setdock-edit.pkg	sha1:7975f67c0cef1154d7b62504b1283cf0d781a34e
+	setdock-edit	setdock-edit.pkg	sha1:2b5b2560b10d735f3525eb492d0d4a71db6c2dcb
 
 #	Install cleanup scripts -- only needed for lab computers
-	cleanups	cleanups.mpkg	sha1:d880b933b6d6b10faff92c81165ffb85190125d5
+	cleanups	cleanups.mpkg	sha1:05182703f7a0a69198f40798cf06094018271e1a
 
 #   Standard FAM Installer doesn't work in image - this should reinstall/fix on first login
 	fixFAMdriver	fixFAMdriver.mpkg	sha1:3e6036be3aba2c8ff9ab71fb7bc9735fbfe9950c
@@ -78,7 +78,7 @@ Third Party Software:
 
 #	For PT/Standard Lab version
 #	All Magic Bullet Software -- for all apps
-#	completeMB	completeMB.pkg	sha1:d1f014d04bc7bdee0a182bb9ba056e2e50f8f4b1
+	completeMB	completeMB.pkg	sha1:d1f014d04bc7bdee0a182bb9ba056e2e50f8f4b1
 
 # For RED version
 #	CS4
@@ -94,9 +94,11 @@ Third Party Software:
 
 	ClipBrowser	ClipBrowser.pkg	sha1:b95fcb7fc32a9c51cade4447cb403c01820e6277
 
-	5DtoRGB	5DtoRGB.dmg	sha1:16fd1740e2e5fac2bdd90b866ccd9938f323d396
+	5DtoRGB	5DtoRGB.dmg	sha1:226be533b10487605a9e189d16320c304f5747a7
 	
-	AVCCAM Restorer	AVCCAM Restorer.dmg	sha1:d937ad3420ba8d5bc37bfa5d10b6057784b6e5a2
+	AVCCAM_Restore_Mac	AVCCAM_Restore_Mac.dmg	sha1:bf046dbbe1b3ece3ab33814769b9231b890c60d9
+	AVCCAMImporter v1.1	AVCCAMImporter v1.1.pkg	sha1:b5ba78151a4fff4b1487158376003de8aab7b34e
+	AVCCAMRecovery_Mac	AVCCAMRecovery_Mac.dmg	sha1:8440ab61431464d1ec5b4d6bb0b01390cea492d4
 	
 # For RED version
 #	AJA

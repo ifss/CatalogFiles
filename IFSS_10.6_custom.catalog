@@ -4,8 +4,8 @@
 # Useful is temporarily editing an include to test something
 # without overwriting a good image
 
-#include-file:	IFSS_10.6_basic.catalog
-include-file:	IFSS_10.6_office.catalog
+include-file:	IFSS_10.6_basic.catalog
+#include-file:	IFSS_10.6_office.catalog
 #include-file:	IFSS_10.6_prod.catalog
 #include-file:	IFSS_10.6_CS3.catalog
 #include-file:	IFSS_10.6_edit.catalog
@@ -13,7 +13,7 @@ include-file:	IFSS_10.6_office.catalog
 # Comment these out if chaining this into another image
 # Or edit as required to produce a custom/test image
 Output Volume Name = IFSS HD
-Output File Name = IFSS-10_6.7_custom-1.0.11-office-test
+Output File Name = IFSS-10_6.7_custom-1.0.12-AMC-test
 
 System Settings:
 
@@ -21,7 +21,7 @@ System Settings:
 #	setdock-edit	setdock-edit.pkg	sha1:7975f67c0cef1154d7b62504b1283cf0d781a34e
 
 #	Install cleanup scripts -- only needed for lab computers
-	cleanups	cleanups.mpkg	sha1:d880b933b6d6b10faff92c81165ffb85190125d5
+	cleanups	cleanups.mpkg	sha1:e4794c5ffb052f9be8af171420c31dfecd1adf60
 
 #	Only needed for when XDCAM is installed
 #	fixFAMdriver	fixFAMdriver.mpkg	sha1:3e6036be3aba2c8ff9ab71fb7bc9735fbfe9950c
@@ -32,7 +32,45 @@ System Settings:
 
 Third Party Software:
 
+# Just here for testing at the moment
+#	AvidMediaComposer	AvidMediaComposer.pkg	sha1:5fc9d6c24c497087f5bfcd06e13f3336eb597303
+
+
 #	Test of new/updated packages (from edit build)
+
+#Textwrangler, iTerm (make first run pkgs - snapshot)
+#Flash, Air, Kuler, Perian, Star Deploy, Flip4Mac, Wacom
+# Googleearth, GSup, 5DtoRGB, JES Deint, Videospec, VLC, Dropcopy, Mindnode, AVCCAM x 3
+#MPEG Streamclip beta - MP2 comp only (for 10.7 only)
+
+	TextWrangler_3.5.3	TextWrangler_3.5.3.dmg	sha1:f8491b6ec69c4399a26cd1b9c56ac00f144d9c7b
+	iTerm2_v1_0_0	iTerm2_v1_0_0.dmg	sha1:4d0b64d04bb9abfe5774d822ce194f775d5c06c1
+
+	Perian-1.2.3	Perian-1.2.3.pkg	sha1:65aae2c6b8fe428186fc7b81fd33995a5d4bcfa2
+	flash11	flash11.pkg	sha1:b1504752adae255d17db89f7b6db1b250be2415c
+	adobeair3_1	adobeair3_1.pkg	sha1:7f2d34b082172df50c92fbbb46f94d97df31edac
+	Kuler	Kuler.pkg	sha1:7aff0967730e8225c6dba27bf12c89e9f1bc4cf2
+
+
+#	StarDeploy v2.0	StarDeploy v2.0.pkg	sha1:50cb8dfb8e484f90b8aca397460e9feb108929d2
+#	Flip4Mac WMV	Flip4Mac WMV.mpkg	sha1:122dd9ff3aff6cf70f8e3ffae4fbd328019e999e
+
+	Install Bamboo	Install Bamboo.pkg	sha1:634938436dc4a7fbd5ef171bf55c6d4c92d29cbd
+	Install Wacom Tablet	Install Wacom Tablet.pkg	sha1:7bb484e4b919268ca65215045a24d9dd5073a336
+
+	GoogleEarthMacNoUpdate-Intel	GoogleEarthMacNoUpdate-Intel.dmg	sha1:e8984613103c0d3dee87478f9a4ef2e2b191b761
+	Google SketchUp 8.0 Installer	Google SketchUp 8.0 Installer.mpkg	sha1:b0e15b4d5a7a62bd9de08ba9fdb45fe4b7bdc4f2
+
+	5DtoRGB	5DtoRGB.dmg	sha1:226be533b10487605a9e189d16320c304f5747a7
+	JES_Deinterlacer_v3.8.1	JES_Deinterlacer_v3.8.1.dmg	sha1:1f0eff66fdba769a986869f548d1034b7ff3e465
+	VideoSpec_0.9.4	VideoSpec_0.9.4.dmg	sha1:1e24f2bea9a8c255b7ce229ed7d53463b803b500
+	vlc-1.1.12	vlc-1.1.12.dmg	sha1:28cd5171c834b3dec3166d390be3739016585e69
+	DropCopy 1.75	DropCopy 1.75.dmg	sha1:78858668c15c4d79e46c06846e86065ddeaba8d5
+	MindNode	MindNode.dmg	sha1:c28ca7bebcfe9d3e5934c054644bee6c72162764
+	AVCCAM_Restore_Mac	AVCCAM_Restore_Mac.dmg	sha1:bf046dbbe1b3ece3ab33814769b9231b890c60d9
+	AVCCAMImporter v1.1	AVCCAMImporter v1.1.pkg	sha1:b5ba78151a4fff4b1487158376003de8aab7b34e
+	AVCCAMRecovery_Mac	AVCCAMRecovery_Mac.dmg	sha1:8440ab61431464d1ec5b4d6bb0b01390cea492d4
+
 
 #	Install Pen Tablet	Install Pen Tablet.pkg	sha1:891c8b9ab838bc96d9aedd883dcea061a79be715
 #	Install Wacom Tablet	Install Wacom Tablet.pkg	sha1:c225a8a31cd234a2196b186041d260e568ab94ae
@@ -46,16 +84,20 @@ Third Party Software:
 #	AVCCAM Restorer	AVCCAM Restorer.dmg	sha1:d937ad3420ba8d5bc37bfa5d10b6057784b6e5a2
 
 #	To test cleanup routines
-	Make Temp Trash	MakeTempTrash.pkg	sha1:bac8abbe01c0a567cfd822bb22104b67f8ba21b7
+#	Make Temp Trash	MakeTempTrash.pkg	sha1:bac8abbe01c0a567cfd822bb22104b67f8ba21b7
 
-	Adobe Air 2.7.1	adobeair271.pkg	sha1:12e0a1515b49a42daa9f6cc7cb30063e2cbc5c29
-	Kuler	Kuler.pkg	sha1:7aff0967730e8225c6dba27bf12c89e9f1bc4cf2
+#	Adobe Air 2.7.1	adobeair271.pkg	sha1:12e0a1515b49a42daa9f6cc7cb30063e2cbc5c29
+#	Kuler	Kuler.pkg	sha1:7aff0967730e8225c6dba27bf12c89e9f1bc4cf2
 
-	Evom	Evom.dmg	sha1:6054e6d72904aa3c327dfaa9297b953492e50845
-	evomsupport	evomsupport.pkg	sha1:339e5c1bbd6c8fa7a54569472b99672613589aa2
+#	Evom	Evom.dmg	sha1:6054e6d72904aa3c327dfaa9297b953492e50845
+#	evomsupport	evomsupport.pkg	sha1:339e5c1bbd6c8fa7a54569472b99672613589aa2
 
 
 
 Software Settings:
 
-	STPprefs	STPprefs.pkg	sha1:60a0de3d9f0c576ec2b2cae83dc61f1008bbd009
+#	STPprefs	STPprefs.pkg	sha1:60a0de3d9f0c576ec2b2cae83dc61f1008bbd009
+
+	firstrun-textwrangler	firstrun-textwrangler.pkg	sha1:2fc32591bec9e50032c9d28ec8ecdf2fb741b720
+	textwrangler-cmdlines	textwrangler-cmdlines.pkg	sha1:0a74413a8633b97c42c05e7a6697166df58d3d77
+	kuler-eula	kuler-eula.pkg	sha1:caac535723caef0b5315224b46135fdd6ec976fd
