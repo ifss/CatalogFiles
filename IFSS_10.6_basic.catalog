@@ -24,7 +24,8 @@ System Settings:
 	ClearRegistration	clearReg.dmg	sha1:0cf3080cc0179fe63883e40a180f6a92b573fd70
 
 	# Remove App Store application (10.6.7)
-	NoMAS	NoMAS.pkg	sha1:86aa4aba4d9eb3e806ab6711cf8e653c0244352a
+	# No longer doing this because of iWork 09
+#	NoMAS	NoMAS.pkg	sha1:86aa4aba4d9eb3e806ab6711cf8e653c0244352a
 	
 	# Note - install basic dock only at this stage: need to update throughout build train
 	Copy Prefs	CopyPrefs.pkg	sha1:920c442654ef3c9f666f6444dd437557607a6ab7
@@ -35,22 +36,22 @@ System Settings:
 	create local admin	createladminUser.pkg	sha1:1f994384fdc2c7e1ecca024aabede07935164c28
 	create IFSS user	createIFSSUser.pkg	sha1:8f561c468b96eea1f1c29559162a952b500a7584
 	
-	Copy MCX	CopyMCX.pkg	sha1:0f1c169df698a924375c60401c39e96727fe4133
+	Copy MCX	CopyMCX.pkg	sha1:0e227e491fe1144f0293c63f297b1dd96c84f0b9
 
 	enableAD	enableAD.pkg	sha1:fddd573ebf880d6f0f504ec6450c2b33e44448f6
 	
-	firstboot	firstboot.mpkg	sha1:3c18541a506dfb70c5a9444512db8e9a2efb2119
+#	firstboot	firstboot.mpkg	sha1:ab527fcd94db2a458b3f4301df0cdc4500a004ca
 #	Use this version for Lab 2 computers (connect to IFSS3 Airport)
-#	firstbootl2	firstbootl2.mpkg	sha1:612600194fd874f48bc0c84c6a9a99236ee3a0cc	
+	firstbootl2	firstbootl2.mpkg	sha1:cd061426e65a6b12cadebc73bfb7e3ef510af632	
 
 	# For Ricoh Aficio 2022 printer
 	#2022prefs	2022prefs.pkg	sha1:11cea7c95eca1c4dc3752032434bc4341741e5a2
 
 	initSettings	initSettings.mpkg	sha1:3c11c811fc0d34a8f0a59962b24d6548c7f02269
-	resetMCX	resetMCX.mpkg	sha1:537ac5964191989951446ffa61d97cc7a268578c
+	resetMCX	resetMCX.mpkg	sha1:e7902fa62a00b1deeb7860b9668e1fb6a088c9ee
 
 #	Set software update preferences (checking off)	
-#	softwareupdate	softwareupdate.pkg	sha1:10097845982e8b5ffc03a912ce9c0c5bf4a5a5c5
+	softwareupdate	softwareupdate.pkg	sha1:10097845982e8b5ffc03a912ce9c0c5bf4a5a5c5
 
 
 Third Party Software:

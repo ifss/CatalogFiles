@@ -4,28 +4,27 @@
 include-file:	IFSS_10.7_prod.catalog
 
 # Comment these out unless building this specific image
-Output Volume Name = IFSS HD
-Output File Name = IFSS-10_7_CS3-1.0.0
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_7_CS5-1.0.0
 
 System Settings:
 
 # Install appropriate dock
-	setdock-cs3	setdock-cs3.pkg	sha1:8ef7df1e8a83e1d3b8c9e1172623a635cbee0709
+#	setdock-cs3	setdock-cs3.pkg	sha1:1bc6572f9ff36fdb7894cb16afb8193c062b191b
 
 
 Third Party Software:
 
-#	CS3
-
-	CS3 Base Install	CS3 Base Install.pkg	sha1:054771ea2504b841b052ab47f87b1a8bdc49c6c3
-	CS3 Update	CS3 Update.pkg	sha1:c891c300c1ebcb8e8b344cf73ae10daa4a7bdb77
-	CS3 Update 2	CS3 Update 2.pkg	sha1:74dbba7be803d8c0affceda07bd594ebf338aa2e
+#	CS5
+#   Currently manual install from AAME package
 
 #	Wacom Drivers
 	Install Bamboo	Install Bamboo.pkg	sha1:634938436dc4a7fbd5ef171bf55c6d4c92d29cbd
 	Install Wacom Tablet	Install Wacom Tablet.pkg	sha1:7bb484e4b919268ca65215045a24d9dd5073a336
 
 
-
 Software Settings:
+
+#	Disable CS5 updates
+	disableupdates	disableupdates.pkg	sha1:3ec3adb1482d9042216b5770f6b376698a8bf093
 

@@ -13,7 +13,7 @@ include-file:	IFSS_10.6_basic.catalog
 # Comment these out if chaining this into another image
 # Or edit as required to produce a custom/test image
 Output Volume Name = IFSS HD
-Output File Name = IFSS-10_6.7_custom-1.0.12-AMC-test
+Output File Name = IFSS-10_6.7_custom-1.0.2-MAS
 
 System Settings:
 
@@ -21,7 +21,7 @@ System Settings:
 #	setdock-edit	setdock-edit.pkg	sha1:7975f67c0cef1154d7b62504b1283cf0d781a34e
 
 #	Install cleanup scripts -- only needed for lab computers
-	cleanups	cleanups.mpkg	sha1:e4794c5ffb052f9be8af171420c31dfecd1adf60
+#	cleanups	cleanups.mpkg	sha1:e4794c5ffb052f9be8af171420c31dfecd1adf60
 
 #	Only needed for when XDCAM is installed
 #	fixFAMdriver	fixFAMdriver.mpkg	sha1:3e6036be3aba2c8ff9ab71fb7bc9735fbfe9950c
@@ -47,7 +47,7 @@ Third Party Software:
 	iTerm2_v1_0_0	iTerm2_v1_0_0.dmg	sha1:4d0b64d04bb9abfe5774d822ce194f775d5c06c1
 
 	Perian-1.2.3	Perian-1.2.3.pkg	sha1:65aae2c6b8fe428186fc7b81fd33995a5d4bcfa2
-	flash11	flash11.pkg	sha1:b1504752adae255d17db89f7b6db1b250be2415c
+#	flash11	flash11.pkg	sha1:b1504752adae255d17db89f7b6db1b250be2415c
 	adobeair3_1	adobeair3_1.pkg	sha1:7f2d34b082172df50c92fbbb46f94d97df31edac
 	Kuler	Kuler.pkg	sha1:7aff0967730e8225c6dba27bf12c89e9f1bc4cf2
 
@@ -64,7 +64,8 @@ Third Party Software:
 	5DtoRGB	5DtoRGB.dmg	sha1:226be533b10487605a9e189d16320c304f5747a7
 	JES_Deinterlacer_v3.8.1	JES_Deinterlacer_v3.8.1.dmg	sha1:1f0eff66fdba769a986869f548d1034b7ff3e465
 	VideoSpec_0.9.4	VideoSpec_0.9.4.dmg	sha1:1e24f2bea9a8c255b7ce229ed7d53463b803b500
-	vlc-1.1.12	vlc-1.1.12.dmg	sha1:28cd5171c834b3dec3166d390be3739016585e69
+#	vlc-1.1.12	vlc-1.1.12.dmg	sha1:28cd5171c834b3dec3166d390be3739016585e69
+	VLC-2.0.0	VLC-2.0.0.dmg	sha1:4fba7a30e0983aca5f9d248780f1ac2f8f0ae884	
 	DropCopy 1.75	DropCopy 1.75.dmg	sha1:78858668c15c4d79e46c06846e86065ddeaba8d5
 	MindNode	MindNode.dmg	sha1:c28ca7bebcfe9d3e5934c054644bee6c72162764
 	AVCCAM_Restore_Mac	AVCCAM_Restore_Mac.dmg	sha1:bf046dbbe1b3ece3ab33814769b9231b890c60d9
@@ -98,6 +99,9 @@ Software Settings:
 
 #	STPprefs	STPprefs.pkg	sha1:60a0de3d9f0c576ec2b2cae83dc61f1008bbd009
 
+	firstrun-prod-gs	firstrun-prod-gs.pkg	sha1:36f7a5ae83964688e515259069aab3064cadd07d
+
 	firstrun-textwrangler	firstrun-textwrangler.pkg	sha1:2fc32591bec9e50032c9d28ec8ecdf2fb741b720
 	textwrangler-cmdlines	textwrangler-cmdlines.pkg	sha1:0a74413a8633b97c42c05e7a6697166df58d3d77
-	kuler-eula	kuler-eula.pkg	sha1:caac535723caef0b5315224b46135fdd6ec976fd
+#	Seems to cause a connection problem for ifss user (okay for ladmin)
+#	kuler-eula	kuler-eula.pkg	sha1:caac535723caef0b5315224b46135fdd6ec976fd

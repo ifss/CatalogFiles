@@ -14,20 +14,21 @@ include-file:	IFSS_10.6_CS3.catalog
 Output Volume Name = IFSS HD
 #Output File Name = IFSS-10_6_edit-1.2.2-Lab1
 #Output File Name = IFSS-10_6_edit-1.2.2-Lab2
-Output File Name = IFSS-10_6_edit-1.4.1
+Output File Name = IFSS-10_6_edit-1.4.2
 #Output File Name = IFSS-10_6_edit-1.2.2-MAS
 #Output File Name = IFSS-10_6_7_edit-1.3.0-Lab2
 
 System Settings:
 
 #	Install appropriate dock
-	setdock-edit	setdock-edit.pkg	sha1:2b5b2560b10d735f3525eb492d0d4a71db6c2dcb
+	setdock-edit	setdock-edit.pkg	sha1:d519f355a4d0224b631ac0c85f648fa087809ff0
 
 #	Install cleanup scripts -- only needed for lab computers
-	cleanups	cleanups.mpkg	sha1:05182703f7a0a69198f40798cf06094018271e1a
+	cleanups	cleanups.mpkg	sha1:dc64105feb246542bca0cc7e7443eaed9b11c972
 
+#	Should not be required with new XDCAM software
 #   Standard FAM Installer doesn't work in image - this should reinstall/fix on first login
-	fixFAMdriver	fixFAMdriver.mpkg	sha1:3e6036be3aba2c8ff9ab71fb7bc9735fbfe9950c
+#	fixFAMdriver	fixFAMdriver.mpkg	sha1:3e6036be3aba2c8ff9ab71fb7bc9735fbfe9950c
 
 
 Third Party Software:
@@ -60,15 +61,29 @@ Third Party Software:
 	
 	Make Temp Trash	MakeTempTrash.pkg	sha1:bac8abbe01c0a567cfd822bb22104b67f8ba21b7
 
+# New XDCAM software below
 # To be installed after Final Cut Studio	
-	XDCAM Transfer	XDCAM Transfer 2.12.mpkg	sha1:a7609de5880d4bda23d014f680b7b4113290c827
+#	XDCAM Transfer	XDCAM Transfer 2.12.mpkg	sha1:a7609de5880d4bda23d014f680b7b4113290c827
 # Drivers for XDCAM
-	XDCAM Drive Software	XDCAM Drive Software.pkg	sha1:c194008f5235b5be5cae1e65dd7f0267c993b444
+#	XDCAM Drive Software	XDCAM Drive Software.pkg	sha1:c194008f5235b5be5cae1e65dd7f0267c993b444
 
 # FAM driver issue now dealt with differently, through script on first run
 # Standard FAM Installer doesn't work in image and FAM Driver Tool in mpkg already installed
 #	FAM Installer	FAM Installer.mpkg	sha1:9320627ac2aae42bbb7fc6aa9776c0f727b62cc0
 #	famdriver	famdriver.pkg	sha1:045c5d99ceb7f2136e81b8fe275fea26cf350244
+
+
+# 2.13 required for Lion. FAM driver now installed separately
+	XDCAM Transfer 2.13	XDCAM Transfer 2.13.mpkg	sha1:ca043852338c6b3f25f76bc964a08002450610fd
+	FAM Installer	FAM Installer.pkg	sha1:ad1e8b4bea0b852f8851b56690d92d1f8e55ce2a
+# XDCAM EX Clip Browser 2.6 replaced by XDCAM Browser 2.0
+	XDCAMBrowser	XDCAMBrowser.pkg	sha1:fcbbccdb56380c2fdf05dfc3631ddd4d1897b749
+
+
+# New SxS driver for Lion, but don't currently need these for lab computers
+#	SxS Device Driver Installer	SxS Device Driver Installer.mpkg	sha1:2818efc0b774ba166abf4593c2d6b502c3cd4119
+#	SxS UDF Driver Software	SxS UDF Driver Software.pkg	sha1:1054379c134bc977ff701f44f3081fe6eb6bf5d6
+
 
 	RED Final Cut Studio Installer	RED Final Cut Studio Installer.mpkg	sha1:6820b8f1ac9d6ee50b174eb68c8d49914335eeac
 
@@ -116,6 +131,9 @@ Third Party Software:
 	IFSS Stock Media	IFSS Stock Media.pkg	sha1:9cde031ec63ff176ca2424afbbbfeb332f1cf977
 # Added in separately for easier updating
 	ifsslogos	ifsslogos.pkg	sha1:0022576e739f3606341a185c857030803e96a891
+
+# Not sure about adding this in here yet
+#	soundfx	/Volumes/Rocky/soundfx.pkg	sha1:cccf43810e3e7e92eb128f499653d42779a6ec72
 
 
 Software Settings:

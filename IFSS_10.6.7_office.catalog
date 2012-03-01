@@ -28,7 +28,8 @@ Third Party Software:
 #	Stupidly, seems to PREVENT DivX AVI's from playing
 #	DivX for Mac	DivX for Mac.pkg	sha1:506a06d79034271e26fddba88bb73e6fe8cbc884
 
-	vlc-1.1.12	vlc-1.1.12.dmg	sha1:28cd5171c834b3dec3166d390be3739016585e69
+#	vlc-1.1.12	vlc-1.1.12.dmg	sha1:28cd5171c834b3dec3166d390be3739016585e69
+	VLC-2.0.0	VLC-2.0.0.dmg	sha1:4fba7a30e0983aca5f9d248780f1ac2f8f0ae884
 
 #	Installed here for QT7 Pro (because separate VL can't be packaged)
 	fcplicense	fcplicense.pkg	sha1:9ef155989e45de480dc127f2c19d823cc04e4247

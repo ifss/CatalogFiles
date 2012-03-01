@@ -15,14 +15,22 @@ System Settings:
 	
 Third Party Software:
 
-	iWork08	iWork08.mpkg	sha1:08492b56e83ce65b81c23c186de0e7ca683ae0d9
+#	iWork08	iWork08.mpkg	sha1:08492b56e83ce65b81c23c186de0e7ca683ae0d9
 	
-	Pages 08 3.0.3	http://support.apple.com/downloads/DL808/en_US/Pages_303.dmg	sha1:b03c37d3f1a0093db600324e226584839e2f3b49
-	Numbers 08 1.0.3	http://support.apple.com/downloads/DL809/en_US/Numbers_103.dmg	sha1:ca6530a300df4b17eb6655b0978d4322b4fa0d62
-	Keynote 08 4.0.4	http://support.apple.com/downloads/DL807/en_US/Keynote_404.dmg	sha1:29709a813b391e23d4327b3fa295115c984c22aa
+#	Pages 08 3.0.3	http://support.apple.com/downloads/DL808/en_US/Pages_303.dmg	sha1:b03c37d3f1a0093db600324e226584839e2f3b49
+#	Numbers 08 1.0.3	http://support.apple.com/downloads/DL809/en_US/Numbers_103.dmg	sha1:ca6530a300df4b17eb6655b0978d4322b4fa0d62
+#	Keynote 08 4.0.4	http://support.apple.com/downloads/DL807/en_US/Keynote_404.dmg	sha1:29709a813b391e23d4327b3fa295115c984c22aa
 	
-	iWorkLicense	iWorkLicense.pkg	sha1:8631cbaf199cddaab07548a0ede1d9baeade2db8
-	iWorkPrefs	iWorkPrefs.pkg	sha1:0a7e18a93235c5da846bea96b0b434112cdd23c5
+#	iWorkLicense	iWorkLicense.pkg	sha1:8631cbaf199cddaab07548a0ede1d9baeade2db8
+#	iWorkPrefs	iWorkPrefs.pkg	sha1:0a7e18a93235c5da846bea96b0b434112cdd23c5
+
+
+# iWork 09
+# MAS versions - already updated as is
+	keynote	keynote.dmg	sha1:2e2e44a257e51b50465ed6e9fed9849eadeaca92
+	numbers	numbers.dmg	sha1:5afb7d657c07746876ed173c16ed7ad5487e02ed
+	pages	pages.dmg	sha1:a610e22fbb01f303186656770b60e6407868a840
 
 Software Settings:
 
+	iWork09Prefs	iWork09Prefs.pkg	sha1:4fd23808729a2b63279913ef94a197f103fe0a9a
