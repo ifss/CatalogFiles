@@ -9,7 +9,7 @@ include-file:	IFSS_10.7_vanilla.catalog
 
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
-#Output File Name = IFSS-10_7_basic-1.0.0
+#Output File Name = IFSS-10_7_basic-1.0.1
 
 
 System Settings:
@@ -32,7 +32,7 @@ System Settings:
 
 	enableAD	enableAD.pkg	sha1:fddd573ebf880d6f0f504ec6450c2b33e44448f6
 	
-	firstbootLionLab1	firstbootLionLab1.mpkg	sha1:0a1c0250d01b735438182b57156a9fe37bab6e42
+	firstbootLionLab1	firstbootLionLab1.mpkg	sha1:1bd264f38e86ab6948528402848834184099193b
 #	Use this version for Lab 2 computers (connect to IFSS3 Airport)
 #	firstbootl2	firstbootl2.mpkg	sha1:612600194fd874f48bc0c84c6a9a99236ee3a0cc	
 
@@ -48,7 +48,7 @@ Third Party Software:
 #	Use Star Deploy to deploy updates and new packages/apps/files 
 #	StarDeploy v1.2.5	StarDeploy v1.2.5.pkg	sha1:f55a5c4fa6766f4bb38c51964770088f69c2d639
 	StarDeploy v2.0	StarDeploy v2.0.pkg	sha1:50cb8dfb8e484f90b8aca397460e9feb108929d2
-	StarDeploy Prefs	sdPrefs.pkg	sha1:034930b81f2655a9381afb4850f38a6047c21ad6
+	StarDeploy Prefs	sdPrefs.pkg	sha1:9ac6dfa324127668c9040184db6b77c6b88ad2b8
 
 #	Flip4Mac 2.3.8.1	Flip4Mac WMV.mpkg	sha1:0b88dc9fb85398df023fa93b03673da66f9d96db
 	Flip4Mac WMV	Flip4Mac WMV.mpkg	sha1:122dd9ff3aff6cf70f8e3ffae4fbd328019e999e

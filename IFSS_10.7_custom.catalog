@@ -13,7 +13,7 @@ include-file:	IFSS_10.7_basic.catalog
 # Comment these out if chaining this into another image
 # Or edit as required to produce a custom/test image
 Output Volume Name = IFSS HD
-Output File Name = IFSS-10_7_2_custom-1.0.3
+Output File Name = IFSS-10_7_2_custom-1.0.5
 
 System Settings:
 
@@ -25,10 +25,10 @@ System Settings:
 	cleanups	cleanups.mpkg	sha1:dc64105feb246542bca0cc7e7443eaed9b11c972
 
 #	Only needed for when XDCAM is installed
-	fixFAMdriver	fixFAMdriver.mpkg	sha1:c45b0bf43d3811c2b45e879b8c87873c80bc6c55
+	fixFAMdriver	fixFAMdriver.mpkg	sha1:6e79e99ab2a75047ee045352cce8fe10e3b9816c
 
 # 	Display usage policy before login (for lab computers)
-	policybanner	policybanner.pkg	sha1:c65a908937d4fe0b1770185c809d593f6190ecec
+	policybanner	policybanner.pkg	sha1:02411f409dd329f06d63d4332a9f997b9b8290c4
 
 
 Third Party Software:

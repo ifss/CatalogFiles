@@ -5,7 +5,7 @@ include-file:	IFSS_10.7_iLife11.catalog
  
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
-#Output File Name = IFSS-10_7_office-1.0.0
+#Output File Name = IFSS-10_7_iWork-1.0.0
 
 System Settings:
 
@@ -25,4 +25,4 @@ Software Settings:
 
 #	iWork09Prefs	iWork09Prefs.pkg	sha1:4fd23808729a2b63279913ef94a197f103fe0a9a
 #	Includes plist lockfiles
-	iWork09PrefsLion	iWork09PrefsLion.pkg	sha1:86d93da8dd505688743bc28c10a79c9220271ce0
+	iWork09PrefsLion	iWork09PrefsLion.pkg	sha1:55f14571ae5c5d5e45bea7ea79dcb07eb8c99483

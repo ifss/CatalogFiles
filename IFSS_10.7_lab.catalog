@@ -32,10 +32,10 @@ System Settings:
 
 #	Should not be required with new XDCAM software - but is!!
 #   Standard FAM Installer doesn't work in image - this should reinstall/fix on first login
-	fixFAMdriver	fixFAMdriver.mpkg	sha1:c45b0bf43d3811c2b45e879b8c87873c80bc6c55
+	fixFAMdriver	fixFAMdriver.mpkg	sha1:6e79e99ab2a75047ee045352cce8fe10e3b9816c
 
 # 	Display usage policy before login (for lab computers)
-	policybanner	policybanner.pkg	sha1:c65a908937d4fe0b1770185c809d593f6190ecec
+	policybanner	policybanner.pkg	sha1:02411f409dd329f06d63d4332a9f997b9b8290c4
 
 
 Third Party Software:
