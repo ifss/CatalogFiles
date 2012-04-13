@@ -1,8 +1,9 @@
-# Starts with basic image including updates, users, preferences etc
-# Installs all common software for non-editing systems
+# Starts with updated image with iLife
+# Installs all iWork 09 (App Store versions)
 
-include-file:	IFSS_10.7_iLife11.catalog
- 
+include-file:	IFSS_10.7_iLife11_MAS.catalog
+#include-file:	IFSS_10.7_iLife11.catalog
+
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
 #Output File Name = IFSS-10_7_iWork-1.0.0
@@ -10,19 +11,23 @@ include-file:	IFSS_10.7_iLife11.catalog
 System Settings:
 
 # Install appropriate dock
-#	setdock-office	setdock-office.pkg	sha1:4f676bdcb62e4ee184eeceded59f9cb3cfa3a936
+#	setdock-office	setdock-office.pkg	sha1:85b71b7ca3a5a09230d9c56a171dda34fe91efa9
 
 	
 Third Party Software:
 
 # MAS versions - already updated as is
-	keynote	keynote.dmg	sha1:2e2e44a257e51b50465ed6e9fed9849eadeaca92
-	numbers	numbers.dmg	sha1:40a9f9f5bfdcd6f4b6dababd0801ffbf4daca1f4
-	pages	pages.dmg	sha1:0b4abe27104c919e6c69f5a09ba70cea9845b97c
-	
+#	keynote	keynote.dmg	sha1:2e2e44a257e51b50465ed6e9fed9849eadeaca92
+#	numbers	numbers.dmg	sha1:40a9f9f5bfdcd6f4b6dababd0801ffbf4daca1f4
+#	pages	pages.dmg	sha1:0b4abe27104c919e6c69f5a09ba70cea9845b97c
+
+# Now using Luggage packaged versions
+
+	Keynote_09_Install-1.0	Keynote_09_Install-1.0.pkg	sha1:9e778c04db7aeeb83c01901c9e96e1173b16be40
+	Numbers_09_Install-1.0	Numbers_09_Install-1.0.pkg	sha1:64060619776f2607a529ca408eb2ca8c75997eea
+	Pages_09_Install-1.0	Pages_09_Install-1.0.pkg	sha1:f0615eac1374adc393fe81c30ace9ed811709abc
 
 Software Settings:
 
-#	iWork09Prefs	iWork09Prefs.pkg	sha1:4fd23808729a2b63279913ef94a197f103fe0a9a
 #	Includes plist lockfiles
 	iWork09PrefsLion	iWork09PrefsLion.pkg	sha1:55f14571ae5c5d5e45bea7ea79dcb07eb8c99483

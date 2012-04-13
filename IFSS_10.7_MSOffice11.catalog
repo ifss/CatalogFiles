@@ -1,9 +1,6 @@
-# Starts with image including all common office etc. software
-# Installs all production system software except for FCP and stock media
+# Starts with image including all basic software
+# Installs all MS Office 11
 
-#include-file:	IFSS_10.7_basic.catalog
-#include-file:	IFSS_10.7_iLife11.catalog
-#include-file:	IFSS_10.6_iWork.catalog
 include-file:	IFSS_10.7_iWork.catalog
 
 # Comment these out unless building this specific image

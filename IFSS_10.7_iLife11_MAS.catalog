@@ -1,0 +1,35 @@
+# Starts with basic image including updates, users, preferences etc
+# Installs all iLife '11 (App Store version with no iWeb)
+
+include-file:	IFSS_10.7_basic.catalog
+
+# Comment these out unless building this specific image
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_7_iLife-1.1.MAS
+
+System Settings:
+
+# Install appropriate dock
+#	
+
+
+Third Party Software:
+
+# iLife '11
+
+	# App Store versions of apps (requires 10.7.2)
+	iLife_AppStore	iLife_AppStore.mpkg	sha1:727b7af5fde8988fe616aa6b745f8e6efc15b1f5
+
+	# Garage Band extra content
+	iLife_Components	iLife_Components.mpkg	sha1:9f8165ac160f98417675688db6e6664861cadf35
+
+## iDVD (non-App store)
+	iDVD 7	iDVD.pkg	sha1:dbe1061e4a0fb2003204b57c0b9320d2996b5867
+
+# iLife '11 Updates as of April 12, 2012
+
+	iDVD 7.1.2	http://support.apple.com/downloads/DL1414/en_US/iDVD7.1.2Update.dmg	sha1:32801de30b53a02aa124274f2580c8331d5acc8a
+	Digital Camera Raw Compatibility Update 3.12	http://support.apple.com/downloads/DL1513/en_US/RAWCameraUpdate3.dmg	sha1:f71c72ec64493c098c31656cc289331833edb28a
+
+Software Settings:
+

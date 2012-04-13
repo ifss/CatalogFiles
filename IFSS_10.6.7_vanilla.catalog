@@ -20,21 +20,21 @@ OS Updates:
 	SnowLeopardFontUpdate	http://support.apple.com/downloads/DL1377/en_US/SnowLeopardFontUpdate.dmg	sha1:7d62a0936f9b572476ebc832db8604ea0e4932b6	
 
 #	iTunes10.4.1	http://appldnld.apple.com/iTunes10/041-2072.20110822.frk45/iTunes10.4.1.dmg	sha1:18c12446addcb7783cfa2954b514705c621fd674
-#	iTunes 10.5 now available
-	iTunes 10.5.3	http://appldnld.apple.com/iTunes10/041-3779.20120119.Bgty5/iTunes10.5.3.dmg	sha1:f27c4e65282f92726aae28d8759dbe4334c7f7ea
+#	iTunes 10.5.3	http://appldnld.apple.com/iTunes10/041-3779.20120119.Bgty5/iTunes10.5.3.dmg	sha1:f27c4e65282f92726aae28d8759dbe4334c7f7ea
+	iTunes 10.6	http://appldnld.apple.com/iTunes10/041-3540.20120307.Defjr/iTunes10.6.dmg	sha1:989eae5442d64dfc6dd4ce3ced38eba3fa9609c3
 
 
 	Safari 5.0.5	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/Safari5/041-0564.20110413.Fi9pb/Safari5.0.5SnowLeopard.dmg	sha1:631cd280171938491c45a905e24904e7739eaefe
 #	Safari 5.0.6	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/Safari5/041-1604.20110720.2HQcx/Safari5.0.6Leopard.dmg	sha1:ea970375d2116a7b74094a2a7669bebc306b6e6f
 
-	Java For Mac OS X 10.6 Update 5	http://support.apple.com/downloads/DL1360/en_US/JavaForMacOSX10.6Update5.dmg	sha1:242a3af116c381e091ebee1ddd28beb36c1b4b62
-#	Java For Mac OS X 10.6 Update 6	http://support.apple.com/downloads/DL1360/en_US/JavaForMacOSX10.6.dmg	sha1:be0ac75b8bac967f1d39a94ebf9482a61fb7d70b
+#	Java For Mac OS X 10.6 Update 5	http://support.apple.com/downloads/DL1360/en_US/JavaForMacOSX10.6Update5.dmg	sha1:242a3af116c381e091ebee1ddd28beb36c1b4b62
+	Java For Mac OS X 10.6 Update 6	http://support.apple.com/downloads/DL1360/en_US/JavaForMacOSX10.6.dmg	sha1:be0ac75b8bac967f1d39a94ebf9482a61fb7d70b
 
 	AirPort Utility 5.5.3	http://support.apple.com/downloads/DL1390/en_US/AirPortUtility553.dmg	sha1:9a2ebd9333d780fe280120f58e4af5bea51a3958
 
 #	iLife Support 9.0.4	http://support.apple.com/downloads/DL1009/en_US/iLifeSupport904.dmg	sha1:7cda1492d1bab91383b5738a7cda2cde24f72d2c
 
-	AirPort Base Station Update 2010-001 5.5.1	http://support.apple.com/downloads/DL955/en_US/AirPortUtility551.dmg	sha1:542636fb7d538795cf18db6aa4453c4bcb570c19	
+#	AirPort Base Station Update 2010-001 5.5.1	http://support.apple.com/downloads/DL955/en_US/AirPortUtility551.dmg	sha1:542636fb7d538795cf18db6aa4453c4bcb570c19	
 
 #	For 10.6.5 or later
 	RAW Camera Update 3.8	http://support.apple.com/downloads/DL1445/en_US/RAWCameraUpdate3.dmg	sha1:1546a1acdc62e95c98fab894ed5a2e07fc794fc3

@@ -5,13 +5,13 @@
 include-file:	IFSS_10.6.7_office.catalog
 
 # Comment these out unless building this specific image
-#Output Volume Name = IFSS HD
-#Output File Name = IFSS-10_6_7_prod-1.3.0
+Output Volume Name = IFSS HD
+Output File Name = IFSS-10_6_7_prod-1.5.0
 
 System Settings:
 
 # Install appropriate dock
-	setdock-prod	setdock-prod.pkg	sha1:34cc7088524732769d6242f0a14dd3fe4038d3e2
+	setdock-prod	setdock-prod.pkg	sha1:85b71b7ca3a5a09230d9c56a171dda34fe91efa9
 
 
 Third Party Software:
@@ -49,7 +49,7 @@ Software Settings:
 
 	firstrun-textwrangler	firstrun-textwrangler.pkg	sha1:2fc32591bec9e50032c9d28ec8ecdf2fb741b720
 	textwrangler-cmdlines	textwrangler-cmdlines.pkg	sha1:0a74413a8633b97c42c05e7a6697166df58d3d77
-	firstrun-prod-gs	firstrun-prod-gs.pkg	sha1:36f7a5ae83964688e515259069aab3064cadd07d
+	firstrun-prod-gs	firstrun-prod-gs.pkg	sha1:7e55c6d363eda6677cca17124b5ca44261b730ff
 	firstrun-prod-mps	firstrun-prod-mps.pkg	sha1:5bba406819c682ab50090a17d3ca5456bbf00e86
 #	Seems to cause a connection problem for ifss user (okay for ladmin)
 #	kuler-eula	kuler-eula.pkg	sha1:caac535723caef0b5315224b46135fdd6ec976fd

@@ -1,17 +1,17 @@
 # Starts with image including all common office etc. software
 # Installs all production system software except for FCP and stock media
 
-include-file:	IFSS_10.7_prod.catalog
+include-file:	IFSS_10.6_prod.catalog
 
 # Comment these out unless building this specific image
 Output Volume Name = IFSS HD
-Output File Name = IFSS-10_7_CS5-1.0.1
+Output File Name = IFSS-10_6_CS5-1.0.0
 
 System Settings:
 
 # Install appropriate dock
 #	setdock-cs3	setdock-cs3.pkg	sha1:1bc6572f9ff36fdb7894cb16afb8193c062b191b
-	prefs_CS_Dock-1.0.0	prefs_CS_Dock-1.0.0.pkg	sha1:9ec65aad1df469e9f34e2fa66fd2468fe9acf2d5
+
 
 Third Party Software:
 

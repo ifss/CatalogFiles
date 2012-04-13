@@ -10,9 +10,8 @@ include-file:	IFSS_10.7_office.catalog
 System Settings:
 
 # Install appropriate dock
-	setdock-prod	setdock-prod.pkg	sha1:85b71b7ca3a5a09230d9c56a171dda34fe91efa9
-
-
+#	setdock-prod	setdock-prod.pkg	sha1:85b71b7ca3a5a09230d9c56a171dda34fe91efa9
+	prefs_ProdDock-1.0.0	prefs_ProdDock-1.0.0.pkg	sha1:8b30352c2edc1b5ae48c4775ca635200055d9edb
 
 Third Party Software:
 

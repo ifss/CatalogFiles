@@ -1,5 +1,5 @@
-# Starts with production or CS3 image
-# Installs all editing packages (to create very large image)
+# Starts with production or CS3/5 image
+# Installs all editing packages except FCP - mostly for testing
 
 # Comment out according to specific version being built
 
@@ -15,7 +15,7 @@ include-file:	IFSS_10.6_CS5.catalog
 Output Volume Name = IFSS HD
 #Output File Name = IFSS-10_6_edit-1.2.2-Lab1
 #Output File Name = IFSS-10_6_edit-1.2.2-Lab2
-Output File Name = IFSS-10_6_edit-1.5.0
+Output File Name = IFSS-10_6_lab-test-1.5.0
 #Output File Name = IFSS-10_6_edit-1.2.2-MAS
 #Output File Name = IFSS-10_6_7_edit-1.3.0-Lab2
 
@@ -29,7 +29,7 @@ System Settings:
 
 #	Should not be required with new XDCAM software
 #   Standard FAM Installer doesn't work in image - this should reinstall/fix on first login
-#	fixFAMdriver	fixFAMdriver.mpkg	sha1:3e6036be3aba2c8ff9ab71fb7bc9735fbfe9950c
+	fixFAMdriver	fixFAMdriver.mpkg	sha1:3e6036be3aba2c8ff9ab71fb7bc9735fbfe9950c
 
 
 Third Party Software:
@@ -37,7 +37,7 @@ Third Party Software:
 
 #	FCP
 
-	IFSSFinalCutStudio	IFSSFinalCutStudio.mpkg	sha1:d9c5a8d8f9bd1b6fb65473a1022cef6d3dc89a64
+#	IFSSFinalCutStudio	IFSSFinalCutStudio.mpkg	sha1:d9c5a8d8f9bd1b6fb65473a1022cef6d3dc89a64
 #	Already installed in 10.6_office include-file
 #	fcplicense	fcplicense.pkg	sha1:9ef155989e45de480dc127f2c19d823cc04e4247
 
@@ -55,7 +55,7 @@ Third Party Software:
 #	FinalCutPro6.0.6Update	FinalCutPro6.0.6Update.pkg	sha1:6b60327553c336fe55089edc749200ffcfe0cc26
 
 #	Alternative to individual updates -- all in one package
-	fcpupdateall	fcpupdateall.pkg	sha1:bc02710aaf9df1b0d56ae9be08bde5fdbb0edff4
+#	fcpupdateall	fcpupdateall.pkg	sha1:bc02710aaf9df1b0d56ae9be08bde5fdbb0edff4
 
 
 	Contour Shuttle	Contour Shuttle.pkg	sha1:e98b1d575d04df80b97eefb11ad14ee4d4edcc59
@@ -86,15 +86,15 @@ Third Party Software:
 #	SxS UDF Driver Software	SxS UDF Driver Software.pkg	sha1:1054379c134bc977ff701f44f3081fe6eb6bf5d6
 
 
-	RED Final Cut Studio Installer	RED Final Cut Studio Installer.mpkg	sha1:6820b8f1ac9d6ee50b174eb68c8d49914335eeac
+#	RED Final Cut Studio Installer	RED Final Cut Studio Installer.mpkg	sha1:6820b8f1ac9d6ee50b174eb68c8d49914335eeac
 
 #	Canon DSLR plugin for FCP
-	Canon E1	Canon E1.pkg	sha1:6d6affac8a99f07f579064ecafd9df91c65eae7a
+#	Canon E1	Canon E1.pkg	sha1:6d6affac8a99f07f579064ecafd9df91c65eae7a
 	
 
 #	For PT/Standard Lab version
 #	All Magic Bullet Software -- for all apps
-	completeMB	completeMB.pkg	sha1:d1f014d04bc7bdee0a182bb9ba056e2e50f8f4b1
+#	completeMB	completeMB.pkg	sha1:d1f014d04bc7bdee0a182bb9ba056e2e50f8f4b1
 
 # For RED version
 #	CS4
@@ -102,10 +102,10 @@ Third Party Software:
 
 
 #	Various free plugins
-	fcpfreeplugins	fcpfreeplugins.pkg	sha1:65d9772d6b7992667fe7dda4edbdbf6b2aee676c
+#	fcpfreeplugins	fcpfreeplugins.pkg	sha1:65d9772d6b7992667fe7dda4edbdbf6b2aee676c
 
 #	Version 3 has update issues, expiring beta
-	Pref_Man_Tiger	Pref_Man_Tiger.dmg	sha1:da5aa0b94f299d62fb443a01d16233b9f5495ce9
+#	Pref_Man_Tiger	Pref_Man_Tiger.dmg	sha1:da5aa0b94f299d62fb443a01d16233b9f5495ce9
 #	Pref_Man	Pref_Man.dmg	sha1:73975a3f0f08b58b6a2917079e43946371e838ef
 
 #	ClipBrowser	ClipBrowser.pkg	sha1:b95fcb7fc32a9c51cade4447cb403c01820e6277
@@ -129,9 +129,10 @@ Third Party Software:
 #	Custom desktop pics
 #	Automatic Duck
 
-	IFSS Stock Media	IFSS Stock Media.pkg	sha1:9cde031ec63ff176ca2424afbbbfeb332f1cf977
+# Leaving these out for moment so test image is not too big
+#	IFSS Stock Media	IFSS Stock Media.pkg	sha1:9cde031ec63ff176ca2424afbbbfeb332f1cf977
 # Added in separately for easier updating
-	ifsslogos	ifsslogos.pkg	sha1:0022576e739f3606341a185c857030803e96a891
+#	ifsslogos	ifsslogos.pkg	sha1:0022576e739f3606341a185c857030803e96a891
 
 # Not sure about adding this in here yet
 #	soundfx	/Volumes/Rocky/soundfx.pkg	sha1:cccf43810e3e7e92eb128f499653d42779a6ec72
@@ -139,6 +140,6 @@ Third Party Software:
 
 Software Settings:
 
-	firstrun-fcp	firstrun-fcp.pkg	sha1:d2c720abe40d2eb9a17032378b40403b198ca3a1
-	STPprefs	STPprefs.pkg	sha1:60a0de3d9f0c576ec2b2cae83dc61f1008bbd009
+#	firstrun-fcp	firstrun-fcp.pkg	sha1:d2c720abe40d2eb9a17032378b40403b198ca3a1
+#	STPprefs	STPprefs.pkg	sha1:60a0de3d9f0c576ec2b2cae83dc61f1008bbd009
 

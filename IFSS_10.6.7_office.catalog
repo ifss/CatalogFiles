@@ -11,7 +11,7 @@ include-file:	IFSS_10.7_MSOffice11.catalog
 System Settings:
 
 # Install appropriate dock
-	setdock-office	setdock-office.pkg	sha1:3752ce1f541279aaf37208559577ceb0452f6762
+	setdock-office	setdock-office.pkg	sha1:4f676bdcb62e4ee184eeceded59f9cb3cfa3a936
 
 	
 Third Party Software:

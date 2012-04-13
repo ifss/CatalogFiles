@@ -1,33 +1,38 @@
-# Starts with basic image including updates, users, preferences etc
-# Installs all common software for non-editing systems
+# Starts with including most standard software
+# Installs all other useful apps for standard office (non-production) users
 
 include-file:	IFSS_10.7_MSOffice11.catalog
  
 # Comment these out unless building this specific image
-#Output Volume Name = IFSS HD
-#Output File Name = IFSS-10_7_office-1.0.0
+Output Volume Name = IFSS HD
+Output File Name = IFSS-10_7_office-1.1.0
 
 System Settings:
 
 # Install appropriate dock
-	setdock-office	setdock-office.pkg	sha1:4f676bdcb62e4ee184eeceded59f9cb3cfa3a936
+#	setdock-office	setdock-office.pkg	sha1:4f676bdcb62e4ee184eeceded59f9cb3cfa3a936
+	prefs_OfficeDock-1.0.0	prefs_OfficeDock-1.0.0.pkg	sha1:e7c8380ab98b9ec7a89534ba7ffa44a3b717f014
 
 	
 Third Party Software:
+# Now using Luggage packages rather than DMGs
 
-	Celtx-2.9.1	Celtx-2.9.1.dmg	sha1:4d603d7b94e29a2bcb1dd48c07971775017e8fc0
+#	Celtx-2.9.1	Celtx-2.9.1.dmg	sha1:4d603d7b94e29a2bcb1dd48c07971775017e8fc0
+	Celtx_2-9-1_Install-1.0	Celtx_2-9-1_Install-1.0.pkg	sha1:68d5c106dd6951bf9ba077e0bfbdd78b993073a3
 
-	DropCopy 1.75	DropCopy 1.75.dmg	sha1:78858668c15c4d79e46c06846e86065ddeaba8d5
+#	DropCopy 1.75	DropCopy 1.75.dmg	sha1:78858668c15c4d79e46c06846e86065ddeaba8d5
+	DropCopy_1-75_Install-1.0.0	DropCopy_1-75_Install-1.0.0.pkg	sha1:c87dc0c194068682b9cf30b90e8ed4525c7656dd
 
-	MindNode	MindNode.dmg	sha1:c28ca7bebcfe9d3e5934c054644bee6c72162764
-	
-#	Stupidly, seems to PREVENT DivX AVI's from playing
-#	DivX for Mac	DivX for Mac.pkg	sha1:506a06d79034271e26fddba88bb73e6fe8cbc884
+#	MindNode	MindNode.dmg	sha1:c28ca7bebcfe9d3e5934c054644bee6c72162764
+	MindNode_Install-1.0	MindNode_Install-1.0.pkg	sha1:4970a0b7ac7098428186df5afb2418247525f381
 
-	VLC-2.0.0	VLC-2.0.0.dmg	sha1:4fba7a30e0983aca5f9d248780f1ac2f8f0ae884
+#	VLC-2.0.0	VLC-2.0.0.dmg	sha1:4fba7a30e0983aca5f9d248780f1ac2f8f0ae884
+	VLC_2-0-0_Install-1.0	VLC_2-0-0_Install-1.0.pkg	sha1:59c7fa727423c70da6a4a61864d61306eebdaf86
 
 #	Installed here for QT7 Pro (because separate VL can't be packaged)
-	fcplicense	fcplicense.pkg	sha1:9ef155989e45de480dc127f2c19d823cc04e4247
+#	fcplicense	fcplicense.pkg	sha1:9ef155989e45de480dc127f2c19d823cc04e4247
+	FCS_SystemID_Install-1.0.0	FCS_SystemID_Install-1.0.0.pkg	sha1:ed9e69b2b80dbc3f56bfb1af9ed6cb789926f085
+
 
 
 Software Settings:

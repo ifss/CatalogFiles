@@ -2,37 +2,46 @@
 # Creates ladmin and IFSS users and sets basic preferences
 # Installs and updates some standard software
 
-# For Lab 2 computers (connect to IFSS3 Airport) edit firstboot below
+# For Lab 2 computers (connect to IFSS3 Airport) choose correct firstboot below
+# For PT version, check Copy MCX version
 
-# For PT version, include 10.6.7 vanilla
 include-file:	IFSS_10.7_vanilla.catalog
 
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
-#Output File Name = IFSS-10_7_basic-1.0.1
+#Output File Name = IFSS-10_7_basic-1.1.0
 
 
 System Settings:
 
 	ClearRegistration	clearReg.dmg	sha1:0cf3080cc0179fe63883e40a180f6a92b573fd70
-
-	# Remove App Store application (10.6.7)
-#	NoMAS	NoMAS.pkg	sha1:86aa4aba4d9eb3e806ab6711cf8e653c0244352a
 	
 	# Note - install basic dock only at this stage: need to update throughout build train
-	Copy Prefs	CopyPrefs.pkg	sha1:920c442654ef3c9f666f6444dd437557607a6ab7
+#	Copy Prefs	CopyPrefs.pkg	sha1:920c442654ef3c9f666f6444dd437557607a6ab7
 	
 	# SetPics script won't run, but this will install required pics
-	Set Pics	SetPics.pkg	sha1:f0c1da58caa4c290968d4b91f12969b77424ab00
+#	Set Pics	SetPics.pkg	sha1:f0c1da58caa4c290968d4b91f12969b77424ab00
 
 	CreateLionUser_ladmin	CreateLionUser_ladmin.pkg	sha1:64294c69175a675ebf293fe35843facf729bdf3a
 	CreateLionUser_IFSS	CreateLionUser_IFSS.pkg	sha1:18274f3b82d649d94029cc94d957239bf8a10534
+
+	# Luggage versions of prefs/pics settings need to be run after users are created
+	prefs_SymbolicHotKeys-1.0.0	prefs_SymbolicHotKeys-1.0.0.pkg	sha1:2ddbf632477eb3f958e4ac0faf32493b97e30301
+	prefs_IFSSdock-1.0.0	prefs_IFSSdock-1.0.0.pkg	sha1:d65f3d85ce583fff10d87031350427a8bf27f95e
+	prefs_installPics-1.0.0	prefs_installPics-1.0.0.pkg	sha1:8c235b6d8d9d935d4d58dfdb9735cfcb9638686d
+
+	# Printer drivers and ppd
+	install_print_drivers	install_print_drivers.pkg	sha1:bc77543401d0d734b4c19dfda9b4fb10e1c39c32
+	ppd_Docucentre-1.0.0	ppd_Docucentre-1.0.0.pkg	sha1:92e738ad1b05a6253aaf9c45b8b2344e38c85d20
 	
 	Copy MCX	CopyMCX.pkg	sha1:0e227e491fe1144f0293c63f297b1dd96c84f0b9
 
 	enableAD	enableAD.pkg	sha1:fddd573ebf880d6f0f504ec6450c2b33e44448f6
 	
-	firstbootLionLab1	firstbootLionLab1.mpkg	sha1:1bd264f38e86ab6948528402848834184099193b
+	# New Luggage version - but postflight is not working
+#	firstboot_10_7_lab_1-1.0.0	firstboot_10_7_lab_1-1.0.0.pkg	sha1:6fa8883fd31b04d27d42d7838a124a7a42bd2bc2
+	
+	firstbootLionLab1	firstbootLionLab1.mpkg	sha1:528369b4a0e567ddf1e2f2b7e388d0baf60fa50a
 #	Use this version for Lab 2 computers (connect to IFSS3 Airport)
 #	firstbootl2	firstbootl2.mpkg	sha1:612600194fd874f48bc0c84c6a9a99236ee3a0cc	
 
@@ -46,9 +55,9 @@ System Settings:
 Third Party Software:
 
 #	Use Star Deploy to deploy updates and new packages/apps/files 
-#	StarDeploy v1.2.5	StarDeploy v1.2.5.pkg	sha1:f55a5c4fa6766f4bb38c51964770088f69c2d639
 	StarDeploy v2.0	StarDeploy v2.0.pkg	sha1:50cb8dfb8e484f90b8aca397460e9feb108929d2
-	StarDeploy Prefs	sdPrefs.pkg	sha1:9ac6dfa324127668c9040184db6b77c6b88ad2b8
+	launchd_StarDeploy-1.0.0	launchd_StarDeploy-1.0.0.pkg	sha1:f00e7731e5a2c4ea459f4d735a9d3f0649245f0e
+	prefs_StarDeploy-1.0.0	prefs_StarDeploy-1.0.0.pkg	sha1:111502b6780aa17f2a56cada94384996b8151f64
 
 #	Flip4Mac 2.3.8.1	Flip4Mac WMV.mpkg	sha1:0b88dc9fb85398df023fa93b03673da66f9d96db
 	Flip4Mac WMV	Flip4Mac WMV.mpkg	sha1:122dd9ff3aff6cf70f8e3ffae4fbd328019e999e

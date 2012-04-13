@@ -25,7 +25,8 @@ Output File Name = IFSS-10_7_lab1-1.0.1
 System Settings:
 
 #	Install appropriate dock
-	setdock-edit	setdock-edit.pkg	sha1:69801ededf30454e9c2910867e221bac4484a52c
+#	setdock-edit	setdock-edit.pkg	sha1:69801ededf30454e9c2910867e221bac4484a52c
+	prefs_Lab1Dock-1.0.0	prefs_Lab1Dock-1.0.0.pkg	sha1:c74257dc30c48df3f83dac4523c92b46badcbe29
 
 #	Install cleanup scripts -- only needed for lab computers
 	cleanups	cleanups.mpkg	sha1:dc64105feb246542bca0cc7e7443eaed9b11c972
