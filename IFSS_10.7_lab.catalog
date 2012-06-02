@@ -11,7 +11,7 @@
 # For RED version don't install CS3
 #include-file:	IFSS_10.7_prod.catalog
 # Basically just installs tablet drivers
-include-file:	IFSS_10.7_CS5.catalog
+#include-file:	IFSS_10.7_CS5.catalog
  
 # Comment these out unless building this specific image
 Output Volume Name = IFSS HD

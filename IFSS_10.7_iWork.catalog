@@ -1,7 +1,7 @@
 # Starts with updated image with iLife
 # Installs all iWork 09 (App Store versions)
 
-include-file:	IFSS_10.7_iLife11_MAS.catalog
+#include-file:	IFSS_10.7_iLife11_MAS.catalog
 #include-file:	IFSS_10.7_iLife11.catalog
 
 # Comment these out unless building this specific image

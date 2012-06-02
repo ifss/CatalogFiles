@@ -5,7 +5,7 @@
 # For Lab 2 computers (connect to IFSS3 Airport) choose correct firstboot below
 # For PT version, check Copy MCX version
 
-include-file:	IFSS_10.7_vanilla.catalog
+#include-file:	IFSS_10.7_vanilla.catalog
 
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
@@ -39,9 +39,9 @@ System Settings:
 	enableAD	enableAD.pkg	sha1:fddd573ebf880d6f0f504ec6450c2b33e44448f6
 	
 	# New Luggage version - but postflight is not working
-#	firstboot_10_7_lab_1-1.0.0	firstboot_10_7_lab_1-1.0.0.pkg	sha1:6fa8883fd31b04d27d42d7838a124a7a42bd2bc2
-	
-	firstbootLionLab1	firstbootLionLab1.mpkg	sha1:528369b4a0e567ddf1e2f2b7e388d0baf60fa50a
+	firstboot_10_7_lab_1-1.0.0	firstboot_10_7_lab_1-1.0.0.pkg	sha1:7fa5f8b52b6b529088ceb8e16bab3c3504ef99cd
+
+#	firstbootLionLab1	firstbootLionLab1.mpkg	sha1:528369b4a0e567ddf1e2f2b7e388d0baf60fa50a
 #	Use this version for Lab 2 computers (connect to IFSS3 Airport)
 #	firstbootl2	firstbootl2.mpkg	sha1:612600194fd874f48bc0c84c6a9a99236ee3a0cc	
 

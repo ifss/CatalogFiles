@@ -6,7 +6,7 @@
 
 # For PT version, include 10.6.7 vanilla
 #include-file:	IFSS_10.6_vanilla.catalog
-include-file:	IFSS_10.6.7_vanilla.catalog
+#include-file:	IFSS_10.6.7_vanilla.catalog
 
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
@@ -33,8 +33,12 @@ System Settings:
 	# SetPics script won't run, but this will install required pics
 	Set Pics	SetPics.pkg	sha1:f0c1da58caa4c290968d4b91f12969b77424ab00
 	
-	create local admin	createladminUser.pkg	sha1:1f994384fdc2c7e1ecca024aabede07935164c28
+	create local admin	createladminUser.pkg	sha1:a307ea50a866c66568d4a0abe46a881fb21f6320
 	create IFSS user	createIFSSUser.pkg	sha1:8f561c468b96eea1f1c29559162a952b500a7584
+
+	# Printer drivers and ppd (required for firstboot to install printer)
+	install_print_drivers	install_print_drivers.pkg	sha1:bc77543401d0d734b4c19dfda9b4fb10e1c39c32
+	ppd_Docucentre-1.0.0	ppd_Docucentre-1.0.0.pkg	sha1:92e738ad1b05a6253aaf9c45b8b2344e38c85d20
 	
 	Copy MCX	CopyMCX.pkg	sha1:0e227e491fe1144f0293c63f297b1dd96c84f0b9
 
@@ -42,7 +46,12 @@ System Settings:
 	
 #	firstboot	firstboot.mpkg	sha1:ab527fcd94db2a458b3f4301df0cdc4500a004ca
 #	Use this version for Lab 2 computers (connect to IFSS3 Airport)
-	firstbootl2	firstbootl2.mpkg	sha1:cd061426e65a6b12cadebc73bfb7e3ef510af632	
+#	firstbootl2	firstbootl2.mpkg	sha1:cd061426e65a6b12cadebc73bfb7e3ef510af632	
+# New Luggage version
+#	firstboot_10_6_lab_2-1.0.0	firstboot_10_6_lab_2-1.0.0.pkg	sha1:d173685857b243247df0115a14fea19daa416e83
+# New luggage version that should work for 10.6 or 10.7
+	firstboot_10_7_lab_1-1.0.0	firstboot_10_7_lab_1-1.0.0.pkg	sha1:7fa5f8b52b6b529088ceb8e16bab3c3504ef99cd
+
 
 	# For Ricoh Aficio 2022 printer
 	#2022prefs	2022prefs.pkg	sha1:11cea7c95eca1c4dc3752032434bc4341741e5a2
@@ -57,9 +66,9 @@ System Settings:
 Third Party Software:
 
 #	Use Star Deploy to deploy updates and new packages/apps/files 
-#	StarDeploy v1.2.5	StarDeploy v1.2.5.pkg	sha1:f55a5c4fa6766f4bb38c51964770088f69c2d639
 	StarDeploy v2.0	StarDeploy v2.0.pkg	sha1:50cb8dfb8e484f90b8aca397460e9feb108929d2
-	StarDeploy Prefs	sdPrefs.pkg	sha1:9ac6dfa324127668c9040184db6b77c6b88ad2b8
+	launchd_StarDeploy-1.0.0	launchd_StarDeploy-1.0.0.pkg	sha1:f00e7731e5a2c4ea459f4d735a9d3f0649245f0e
+	prefs_StarDeploy-1.0.0	prefs_StarDeploy-1.0.0.pkg	sha1:111502b6780aa17f2a56cada94384996b8151f64
 
 #	Flip4Mac 2.3.8.1	Flip4Mac WMV.mpkg	sha1:0b88dc9fb85398df023fa93b03673da66f9d96db
 	Flip4Mac WMV	Flip4Mac WMV.mpkg	sha1:122dd9ff3aff6cf70f8e3ffae4fbd328019e999e

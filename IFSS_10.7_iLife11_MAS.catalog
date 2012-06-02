@@ -1,7 +1,7 @@
 # Starts with basic image including updates, users, preferences etc
 # Installs all iLife '11 (App Store version with no iWeb)
 
-include-file:	IFSS_10.7_basic.catalog
+#include-file:	IFSS_10.7_basic.catalog
 
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
@@ -18,7 +18,7 @@ Third Party Software:
 # iLife '11
 
 	# App Store versions of apps (requires 10.7.2)
-	iLife_AppStore	iLife_AppStore.mpkg	sha1:727b7af5fde8988fe616aa6b745f8e6efc15b1f5
+	iLife_AppStore	iLife_AppStore.mpkg	sha1:d71b64e68d2b622f5990024db36795f08f383d8f
 
 	# Garage Band extra content
 	iLife_Components	iLife_Components.mpkg	sha1:9f8165ac160f98417675688db6e6664861cadf35

@@ -1,11 +1,11 @@
 # Starts with including most standard software
 # Installs all other useful apps for standard office (non-production) users
 
-include-file:	IFSS_10.7_MSOffice11.catalog
+#include-file:	IFSS_10.7_MSOffice11.catalog
  
 # Comment these out unless building this specific image
-Output Volume Name = IFSS HD
-Output File Name = IFSS-10_7_office-1.1.0
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_7_office-1.1.0
 
 System Settings:
 

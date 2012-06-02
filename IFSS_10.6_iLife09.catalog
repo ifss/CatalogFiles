@@ -36,3 +36,8 @@ Third Party Software:
 
 Software Settings:
 
+# Check for latest
+#	For 10.6.5 or later
+#	RAW Camera Update 3.8	http://support.apple.com/downloads/DL1445/en_US/RAWCameraUpdate3.dmg	sha1:1546a1acdc62e95c98fab894ed5a2e07fc794fc3
+
+#	iLife Support 9.0.4	http://support.apple.com/downloads/DL1009/en_US/iLifeSupport904.dmg	sha1:7cda1492d1bab91383b5738a7cda2cde24f72d2c

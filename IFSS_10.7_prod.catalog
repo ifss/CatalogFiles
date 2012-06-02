@@ -1,7 +1,7 @@
 # Starts with image including all common office etc. software
 # Installs all production system software except for FCP/Adobe and stock media
 
-include-file:	IFSS_10.7_office.catalog
+#include-file:	IFSS_10.7_office.catalog
 
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD

@@ -1,7 +1,7 @@
 # Starts with image including all basic software
 # Installs all MS Office 11
 
-include-file:	IFSS_10.7_iWork.catalog
+#include-file:	IFSS_10.7_iWork.catalog
 
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
@@ -23,7 +23,7 @@ Third Party Software:
 	Error Reporting Installer	Error Reporting Installer.mpkg	sha1:fb4eceed5423aa9709f0d567cbb0fa604b204e3a
 
 #	Updates, Mosen patched (both patches)
-	Office 2011 14.1.4 Update	Office 2011 14.1.4 Update.mpkg	sha1:57d00d9cedd69b5fe3496af5c05f0f2a74b9a137
+	Office 2011 14.1.4 Update	Office 2011 14.1.4 Update.mpkg	sha1:2a1ed365635b4a96d27a29f190ed800be0857e14
 
 
 Software Settings:

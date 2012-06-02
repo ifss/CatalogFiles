@@ -1,7 +1,7 @@
 # Starts with basic image including updates, users, preferences etc
 # Installs all iLife '11 (DVD version)
 
-include-file:	IFSS_10.7_basic.catalog
+#include-file:	IFSS_10.7_basic.catalog
 
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD

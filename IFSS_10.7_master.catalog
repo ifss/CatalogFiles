@@ -1,0 +1,35 @@
+# STANDARD IFSS LION IMAGE WITH ILIFE
+# Starts with 10.7 vanilla image
+# Creates ladmin and IFSS users and sets basic preferences
+# Installs and updates standard software, according to workstation usage
+
+ISO Language Code = en
+Output Volume Name = IFSS HD
+Output File Name = IFSS-10_7-1.0.0
+#Output File Name = IFSS-10_7_vanilla-1.1.0
+#Output File Name = IFSS-10_7_basic-1.1.0
+#Output File Name = IFSS-10_7_iLife-1.1.MAS
+#Output File Name = IFSS-10_7_iWork-1.0.0
+#Output File Name = IFSS-10_7_MSOffice11-1.0.0
+#Output File Name = IFSS-10_7_office-1.1.0
+#Output File Name = IFSS-10_7_prod-1.0.0
+#Output File Name = IFSS-10_7_CS5-1.0.1
+#Output File Name = IFSS-10_7_lab1-1.0.1
+
+include-file: IFSS_10.7_vanilla.catalog
+include-file: IFSS_10.7_basic.catalog
+#include-file: IFSS_10.7_iLife11_MAS.catalog
+#include-file: IFSS_10.7_iWork.catalog
+#include-file: IFSS_10.7_MSOffice11.catalog
+#include-file: IFSS_10.7_office.catalog
+#include-file: IFSS_10.7_prod.catalog
+#include-file: IFSS_10.7_CS5.catalog
+#include-file: IFSS_10.7_lab.catalog
+
+OS Updates:
+
+System Settings:
+
+Third Party Software:
+	
+Software Settings:
