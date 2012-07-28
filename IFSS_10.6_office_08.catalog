@@ -1,7 +1,7 @@
 # Starts with basic image including updates, users, preferences etc
 # Installs all common software for non-editing (office) systems
 
-include-file:	IFSS_10.6_basic.catalog
+#include-file:	IFSS_10.6_basic.catalog
 #include-file:	IFSS_10.7_MSOffice11.catalog
  
 # Comment these out unless building this specific image

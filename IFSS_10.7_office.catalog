@@ -1,5 +1,5 @@
-# Starts with including most standard software
-# Installs all other useful apps for standard office (non-production) users
+# Adds to image including iWork, MS Office, and most standard software
+# Installs other useful apps for standard office (non-production) users
 
 #include-file:	IFSS_10.7_MSOffice11.catalog
  
@@ -29,7 +29,7 @@ Third Party Software:
 #	VLC-2.0.0	VLC-2.0.0.dmg	sha1:4fba7a30e0983aca5f9d248780f1ac2f8f0ae884
 	VLC_2-0-0_Install-1.0	VLC_2-0-0_Install-1.0.pkg	sha1:59c7fa727423c70da6a4a61864d61306eebdaf86
 
-#	Installed here for QT7 Pro (because separate VL can't be packaged)
+#	Installed here for QT7 Pro (because separate VL doesn't seem to package)
 #	fcplicense	fcplicense.pkg	sha1:9ef155989e45de480dc127f2c19d823cc04e4247
 	FCS_SystemID_Install-1.0.0	FCS_SystemID_Install-1.0.0.pkg	sha1:ed9e69b2b80dbc3f56bfb1af9ed6cb789926f085
 

@@ -4,8 +4,8 @@
 #include-file:	IFSS_10.7_prod.catalog
 
 # Comment these out unless building this specific image
-Output Volume Name = IFSS HD
-Output File Name = IFSS-10_7_CS5-1.0.1
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_7_CS5-1.0.1
 
 System Settings:
 

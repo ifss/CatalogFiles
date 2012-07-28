@@ -1,6 +1,8 @@
 # Starts with image including all common office etc. software
 # Installs all production system software except for FCP/Adobe and stock media
 
+# Note -- check below for 10.7/10.6.8 variations (QT Player, AVCCam Viewer)
+
 #include-file:	IFSS_10.7_office.catalog
 
 # Comment these out unless building this specific image
@@ -15,8 +17,9 @@ System Settings:
 
 Third Party Software:
 
+#	Already installed with OS via installer choices for 10.6.x
 #	Needs to be installed for Lion
-	QuickTimePlayer 7.6.6 SnowLeopard	http://support.apple.com/downloads/DL923/en_US/QuickTimePlayer7.6.6_SnowLeopard.dmg	sha1:65e7456d9bb8697da7a2cda8842b29160123913c
+#	QuickTimePlayer 7.6.6 SnowLeopard	http://support.apple.com/downloads/DL923/en_US/QuickTimePlayer7.6.6_SnowLeopard.dmg	sha1:65e7456d9bb8697da7a2cda8842b29160123913c
 
 	TextWrangler_3.5.3	TextWrangler_3.5.3.dmg	sha1:f8491b6ec69c4399a26cd1b9c56ac00f144d9c7b
 	iTerm2_v1_0_0	iTerm2_v1_0_0.dmg	sha1:4d0b64d04bb9abfe5774d822ce194f775d5c06c1
@@ -39,7 +42,7 @@ Third Party Software:
 
 
 # AVCCAM Viewer not qualified for Lion
-#	avccamviewer_1.2.sl	avccamviewer_1.2.sl.mpkg	sha1:3e1c035d1bbd7ad76d7d3ba315bd7120c4f146e0
+	avccamviewer_1.2.sl	avccamviewer_1.2.sl.mpkg	sha1:3e1c035d1bbd7ad76d7d3ba315bd7120c4f146e0
 
 Software Settings:
 

@@ -2,11 +2,11 @@
 # Installs all production system software except for FCP/Adobe and stock media
 
 #include-file:	IFSS_10.6_office.catalog
-include-file:	IFSS_10.6.7_office.catalog
+#include-file:	IFSS_10.6.7_office.catalog
 
 # Comment these out unless building this specific image
-Output Volume Name = IFSS HD
-Output File Name = IFSS-10_6_7_prod-1.5.0
+#Output Volume Name = IFSS HD
+#Output File Name = IFSS-10_6_7_prod-1.5.0
 
 System Settings:
 
@@ -35,7 +35,8 @@ Third Party Software:
 	Perian-1.2.3	Perian-1.2.3.pkg	sha1:65aae2c6b8fe428186fc7b81fd33995a5d4bcfa2
 
 	GoogleEarthMacNoUpdate-Intel	GoogleEarthMacNoUpdate-Intel.dmg	sha1:e8984613103c0d3dee87478f9a4ef2e2b191b761
-	Google SketchUp 8.0 Installer	Google SketchUp 8.0 Installer.mpkg	sha1:b0e15b4d5a7a62bd9de08ba9fdb45fe4b7bdc4f2
+	Google SketchUp 8.0 Installer	Google SketchUp 8.0 Installer.mpkg	sha1:01dc47a9e33948c1810cfb315a315ce19e483c9e
+
 
 	JES_Deinterlacer_v3.8.1	JES_Deinterlacer_v3.8.1.dmg	sha1:1f0eff66fdba769a986869f548d1034b7ff3e465
 	MPEG Streamclip 1.9.2	MPEG_Streamclip_1.9.2.dmg	sha1:346ea3aef9b7638a0e39e30e494f04010c73afe1

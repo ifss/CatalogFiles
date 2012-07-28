@@ -7,15 +7,15 @@
 # For Lab 2 version, edit Basic catalog (firstbootl2 connects to IFSS3)
 
 #include-file:	IFSS_10.6_CS3.catalog
-include-file:	IFSS_10.6_CS5.catalog
+#include-file:	IFSS_10.6_CS5.catalog
 # For RED version don't install CS3
 #include-file:	IFSS_10.6_prod.catalog
  
 # Comment these out unless building this specific image
-Output Volume Name = IFSS HD
+#Output Volume Name = IFSS HD
 #Output File Name = IFSS-10_6_edit-1.2.2-Lab1
 #Output File Name = IFSS-10_6_edit-1.2.2-Lab2
-Output File Name = IFSS-10_6_lab-test-1.5.0
+#Output File Name = IFSS-10_6_lab-test-1.5.0
 #Output File Name = IFSS-10_6_edit-1.2.2-MAS
 #Output File Name = IFSS-10_6_7_edit-1.3.0-Lab2
 
@@ -29,7 +29,7 @@ System Settings:
 
 #	Should not be required with new XDCAM software
 #   Standard FAM Installer doesn't work in image - this should reinstall/fix on first login
-	fixFAMdriver	fixFAMdriver.mpkg	sha1:3e6036be3aba2c8ff9ab71fb7bc9735fbfe9950c
+#	fixFAMdriver	fixFAMdriver.mpkg	sha1:3e6036be3aba2c8ff9ab71fb7bc9735fbfe9950c
 
 
 Third Party Software:

@@ -1,28 +1,30 @@
-# Starts with production or CS3 image
-# Installs all editing packages (to create very large image)
+# Creates lab computer image ready for manual install of CS5.5+/MC6
+# Adds on to production/CS5 image (CS5 image only has support software, not CS5 itself)
+# Installs FCP, stock media and all other editing software (to create very large image)
 
 # Comment out according to specific version being built
 
-# For PT version, edit basic catalog to include 10.6.7 vanilla
 # For Lab 2 version, edit Basic catalog (firstbootl2 connects to IFSS3)
 
-#include-file:	IFSS_10.6_CS3.catalog
-#include-file:	IFSS_10.6_CS5.catalog
+# Only use CS3 if not doing manual install of CS5.5+
+# include-file:	IFSS_10.6_CS3.catalog
 # For RED version don't install CS3
-#include-file:	IFSS_10.6_prod.catalog
+#include-file:	IFSS_10.7_prod.catalog
+# Basically just installs tablet drivers
+#include-file:	IFSS_10.7_CS5.catalog
+
  
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
-#Output File Name = IFSS-10_6_edit-1.2.2-Lab1
-#Output File Name = IFSS-10_6_edit-1.2.2-Lab2
-#Output File Name = IFSS-10_6_edit-1.5.0
-#Output File Name = IFSS-10_6_edit-1.2.2-MAS
 #Output File Name = IFSS-10_6_7_edit-1.3.0-Lab2
+#Output File Name = IFSS-10_6_lab2-1.0.0
 
 System Settings:
 
 #	Install appropriate dock
-	setdock-edit	setdock-edit.pkg	sha1:d519f355a4d0224b631ac0c85f648fa087809ff0
+#	setdock-edit	setdock-edit.pkg	sha1:d519f355a4d0224b631ac0c85f648fa087809ff0
+	prefs_Lab1Dock-1.0.0	prefs_Lab1Dock-1.0.0.pkg	sha1:c74257dc30c48df3f83dac4523c92b46badcbe29
+
 
 #	Install cleanup scripts -- only needed for lab computers
 	cleanups	cleanups.mpkg	sha1:dc64105feb246542bca0cc7e7443eaed9b11c972
@@ -82,8 +84,9 @@ Third Party Software:
 
 
 # New SxS driver for Lion, but don't currently need these for lab computers
-#	SxS Device Driver Installer	SxS Device Driver Installer.mpkg	sha1:2818efc0b774ba166abf4593c2d6b502c3cd4119
-#	SxS UDF Driver Software	SxS UDF Driver Software.pkg	sha1:1054379c134bc977ff701f44f3081fe6eb6bf5d6
+# But installing prevents warning when running XDCAM Transfer
+	SxS Device Driver Installer	SxS Device Driver Installer.mpkg	sha1:2818efc0b774ba166abf4593c2d6b502c3cd4119
+	SxS UDF Driver Software	SxS UDF Driver Software.pkg	sha1:1054379c134bc977ff701f44f3081fe6eb6bf5d6
 
 
 	RED Final Cut Studio Installer	RED Final Cut Studio Installer.mpkg	sha1:6820b8f1ac9d6ee50b174eb68c8d49914335eeac

@@ -1,4 +1,4 @@
-# Starts with 10.6 vanilla image
+# Adds to 10.6 vanilla image
 # Creates ladmin and IFSS users and sets basic preferences
 # Installs and updates some standard software
 
@@ -11,12 +11,6 @@
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
 #Output File Name = IFSS-10_6_7_basic-1.0.0
-
-
-# NOTE: NEW UPDATES TO CHECK/ADD TO HERE OR VANILLA
-
-# Sec Update 2011-006
-# Safari 5.1.1 (10.6.8)
 
 
 System Settings:
@@ -48,9 +42,9 @@ System Settings:
 #	Use this version for Lab 2 computers (connect to IFSS3 Airport)
 #	firstbootl2	firstbootl2.mpkg	sha1:cd061426e65a6b12cadebc73bfb7e3ef510af632	
 # New Luggage version
-#	firstboot_10_6_lab_2-1.0.0	firstboot_10_6_lab_2-1.0.0.pkg	sha1:d173685857b243247df0115a14fea19daa416e83
+	firstboot_10_6_lab_2-1.0.0	firstboot_10_6_lab_2-1.0.0.pkg	sha1:d173685857b243247df0115a14fea19daa416e83
 # New luggage version that should work for 10.6 or 10.7
-	firstboot_10_7_lab_1-1.0.0	firstboot_10_7_lab_1-1.0.0.pkg	sha1:7fa5f8b52b6b529088ceb8e16bab3c3504ef99cd
+#	firstboot_10_7_lab_1-1.0.0	firstboot_10_7_lab_1-1.0.0.pkg	sha1:7fa5f8b52b6b529088ceb8e16bab3c3504ef99cd
 
 
 	# For Ricoh Aficio 2022 printer
@@ -63,6 +57,11 @@ System Settings:
 	softwareupdate	softwareupdate.pkg	sha1:10097845982e8b5ffc03a912ce9c0c5bf4a5a5c5
 
 
+Apple Updates:
+	
+	Fuji Xerox Printer Drivers 2.2	http://support.apple.com/downloads/DL904/en_US/FujiXeroxPrinterDrivers2.2.dmg	sha1:7248823a2361628a3641e12f2be0342689d1abc6
+
+
 Third Party Software:
 
 #	Use Star Deploy to deploy updates and new packages/apps/files 
@@ -70,8 +69,9 @@ Third Party Software:
 	launchd_StarDeploy-1.0.0	launchd_StarDeploy-1.0.0.pkg	sha1:f00e7731e5a2c4ea459f4d735a9d3f0649245f0e
 	prefs_StarDeploy-1.0.0	prefs_StarDeploy-1.0.0.pkg	sha1:111502b6780aa17f2a56cada94384996b8151f64
 
-#	Flip4Mac 2.3.8.1	Flip4Mac WMV.mpkg	sha1:0b88dc9fb85398df023fa93b03673da66f9d96db
-	Flip4Mac WMV	Flip4Mac WMV.mpkg	sha1:122dd9ff3aff6cf70f8e3ffae4fbd328019e999e
+
+	Flip4Mac WMV	Flip4Mac WMV.mpkg	sha1:788004704b5fee8da92f4243644afe6438f25c93
+
 
 	flash11	flash11.pkg	sha1:b1504752adae255d17db89f7b6db1b250be2415c
 

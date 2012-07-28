@@ -5,9 +5,9 @@
 
 ISO Language Code = en
 Output Volume Name = IFSS HD
-Output File Name = IFSS-10_6_7-1.0.0
-#Output File Name = IFSS-10_6_vanilla-1.1.0
-#Output File Name = IFSS-10_6_basic-1.1.0
+#Output File Name = IFSS-10_6_8-1.0.0
+#Output File Name = IFSS-10_6_8-vanilla-1.0.0
+#Output File Name = IFSS-10_6_8-basic-1.0.0
 #Output File Name = IFSS-10_6_iLife-1.1.0
 #Output File Name = IFSS-10_6_iWork-1.0.0
 #Output File Name = IFSS-10_6_MSOffice11-1.0.0
@@ -15,18 +15,17 @@ Output File Name = IFSS-10_6_7-1.0.0
 #Output File Name = IFSS-10_6_prod-1.0.0
 #Output File Name = IFSS-10_6_CS5-1.0.1
 #Output File Name = IFSS-10_6_lab1-1.0.1
+Output File Name = IFSS-10_6_8-lab2-1.0.0
 
-#include-file: IFSS_10.6_vanilla.catalog
-# For PT version, include 10.6.7 vanilla
-include-file: IFSS_10.6.7_vanilla.catalog
+include-file: IFSS_10.6_vanilla.catalog
 include-file: IFSS_10.6_basic.catalog
-#include-file: IFSS_10.6_iLife11.catalog
-#include-file: IFSS_10.6_iWork.catalog
-#include-file: IFSS_10.6_MSOffice11.catalog
-#include-file: IFSS_10.6_office.catalog
-#include-file: IFSS_10.6_prod.catalog
-#include-file: IFSS_10.6_CS5.catalog
-#include-file: IFSS_10.6_lab.catalog
+include-file: IFSS_10.7_iLife11.catalog
+include-file: IFSS_10.6_iWork.catalog
+include-file: IFSS_10.7_MSOffice11.catalog
+include-file: IFSS_10.7_office.catalog
+include-file: IFSS_10.7_prod.catalog
+include-file: IFSS_10.7_CS5.catalog
+include-file: IFSS_10.6_lab2.catalog
 
 OS Updates:
 

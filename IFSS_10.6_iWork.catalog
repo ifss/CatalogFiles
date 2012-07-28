@@ -1,7 +1,7 @@
 # Starts with basic image including updates, users, preferences etc
 # Installs all common software for non-editing systems
 
-include-file:	IFSS_10.7_iLife11.catalog
+#include-file:	IFSS_10.7_iLife11.catalog
  
 # Comment these out unless building this specific image
 #Output Volume Name = IFSS HD
