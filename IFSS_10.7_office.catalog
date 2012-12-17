@@ -17,18 +17,14 @@ System Settings:
 Third Party Software:
 # Now using Luggage packages rather than DMGs
 
-#	Celtx-2.9.1	Celtx-2.9.1.dmg	sha1:4d603d7b94e29a2bcb1dd48c07971775017e8fc0
-	Celtx_2-9-1_Install-1.0	Celtx_2-9-1_Install-1.0.pkg	sha1:68d5c106dd6951bf9ba077e0bfbdd78b993073a3
+	Celtx 2.9.7	Celtx_2-9-7_Install-1.0.pkg	sha1:c5e39f93763ff76d2ac4732773197d136db7809b
 
-#	DropCopy 1.75	DropCopy 1.75.dmg	sha1:78858668c15c4d79e46c06846e86065ddeaba8d5
-	DropCopy_1-75_Install-1.0.0	DropCopy_1-75_Install-1.0.0.pkg	sha1:c87dc0c194068682b9cf30b90e8ed4525c7656dd
+	DropCopy 1.77	DropCopy_1-77_Install-1.0.0.pkg	sha1:dd24de48460a6853e6e86b91379cb5ade1ed2313
 
-#	MindNode	MindNode.dmg	sha1:c28ca7bebcfe9d3e5934c054644bee6c72162764
-	MindNode_Install-1.0	MindNode_Install-1.0.pkg	sha1:4970a0b7ac7098428186df5afb2418247525f381
+	MindNode 1.8.1	MindNode_1-8-1_Install-1.0.0.pkg	sha1:0725ae2eb243380a752fcac99e3dd35c81e5adf7
 
-#	VLC-2.0.0	VLC-2.0.0.dmg	sha1:4fba7a30e0983aca5f9d248780f1ac2f8f0ae884
-	VLC_2-0-0_Install-1.0	VLC_2-0-0_Install-1.0.pkg	sha1:59c7fa727423c70da6a4a61864d61306eebdaf86
-
+	VLC 2.0.3	VLC_2-0-3_Install-1.0.0.pkg	sha1:08a76ff8dd0eca41a8b2728c974aca928f3a6fd8
+	
 #	Installed here for QT7 Pro (because separate VL doesn't seem to package)
 #	fcplicense	fcplicense.pkg	sha1:9ef155989e45de480dc127f2c19d823cc04e4247
 	FCS_SystemID_Install-1.0.0	FCS_SystemID_Install-1.0.0.pkg	sha1:ed9e69b2b80dbc3f56bfb1af9ed6cb789926f085

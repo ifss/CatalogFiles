@@ -77,10 +77,11 @@ Third Party Software:
 
 
 # 2.13 required for Lion. FAM driver now installed separately
-	XDCAM Transfer 2.13	XDCAM Transfer 2.13.mpkg	sha1:ca043852338c6b3f25f76bc964a08002450610fd
-	FAM Installer	FAM Installer.pkg	sha1:ad1e8b4bea0b852f8851b56690d92d1f8e55ce2a
+#	XDCAM Transfer 2.13	XDCAM Transfer 2.13.mpkg	sha1:ca043852338c6b3f25f76bc964a08002450610fd
+
 # XDCAM EX Clip Browser 2.6 replaced by XDCAM Browser 2.0
 	XDCAMBrowser	XDCAMBrowser.pkg	sha1:fcbbccdb56380c2fdf05dfc3631ddd4d1897b749
+
 
 
 # New SxS driver for Lion, but don't currently need these for lab computers
@@ -88,6 +89,7 @@ Third Party Software:
 	SxS Device Driver Installer	SxS Device Driver Installer.mpkg	sha1:2818efc0b774ba166abf4593c2d6b502c3cd4119
 	SxS UDF Driver Software	SxS UDF Driver Software.pkg	sha1:1054379c134bc977ff701f44f3081fe6eb6bf5d6
 
+	FAM Installer	FAM Installer.pkg	sha1:ad1e8b4bea0b852f8851b56690d92d1f8e55ce2a
 
 	RED Final Cut Studio Installer	RED Final Cut Studio Installer.mpkg	sha1:6820b8f1ac9d6ee50b174eb68c8d49914335eeac
 
@@ -113,7 +115,8 @@ Third Party Software:
 
 #	ClipBrowser	ClipBrowser.pkg	sha1:b95fcb7fc32a9c51cade4447cb403c01820e6277
 
-	5DtoRGB	5DtoRGB.dmg	sha1:226be533b10487605a9e189d16320c304f5747a7
+#	New MAS version
+	5DtoRGB	5DtoRGB-1-5-9_Install-1.0.0.pkg	sha1:039cf4a571e68082aeb1887ffcfa1955d0ea5a0f
 	
 	AVCCAM_Restore_Mac	AVCCAM_Restore_Mac.dmg	sha1:bf046dbbe1b3ece3ab33814769b9231b890c60d9
 	AVCCAMImporter v1.1	AVCCAMImporter v1.1.pkg	sha1:b5ba78151a4fff4b1487158376003de8aab7b34e
@@ -132,9 +135,9 @@ Third Party Software:
 #	Custom desktop pics
 #	Automatic Duck
 
-	IFSS Stock Media	IFSS Stock Media.pkg	sha1:9cde031ec63ff176ca2424afbbbfeb332f1cf977
+#	IFSS Stock Media	IFSS Stock Media.pkg	sha1:9cde031ec63ff176ca2424afbbbfeb332f1cf977
 # Added in separately for easier updating
-	ifsslogos	ifsslogos.pkg	sha1:0022576e739f3606341a185c857030803e96a891
+#	ifsslogos	ifsslogos.pkg	sha1:0022576e739f3606341a185c857030803e96a891
 
 # Not sure about adding this in here yet
 #	soundfx	/Volumes/Rocky/soundfx.pkg	sha1:cccf43810e3e7e92eb128f499653d42779a6ec72

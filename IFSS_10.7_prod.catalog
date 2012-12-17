@@ -21,10 +21,11 @@ Third Party Software:
 #	Needs to be installed for Lion
 #	QuickTimePlayer 7.6.6 SnowLeopard	http://support.apple.com/downloads/DL923/en_US/QuickTimePlayer7.6.6_SnowLeopard.dmg	sha1:65e7456d9bb8697da7a2cda8842b29160123913c
 
-	TextWrangler_3.5.3	TextWrangler_3.5.3.dmg	sha1:f8491b6ec69c4399a26cd1b9c56ac00f144d9c7b
+	TextWrangler 4.0.1	TextWrangler-4-0-1_Install-1.0.0.pkg	sha1:f523063f5284fdac36d2d657cc4d7a048c86e890
+	
 	iTerm2_v1_0_0	iTerm2_v1_0_0.dmg	sha1:4d0b64d04bb9abfe5774d822ce194f775d5c06c1
 
-	VideoSpec_0.9.4	VideoSpec_0.9.4.dmg	sha1:1e24f2bea9a8c255b7ce229ed7d53463b803b500
+	VideoSpec_0.9.4	VideoSpec-0-9-6_Install-1.0.0.pkg	sha1:4973a53982129c0162ad1a5defdf643f3b235047
 	aspectRatio_1.12	aspectRatio_1.12.dmg	sha1:5c2324cdc9ea65c82022062d3082b2a52ba1a0ea
 	AJADataCalc	AJADataCalc.dmg	sha1:ce027001ac24d72ffdbfe9337d264da70477101b
 
@@ -33,12 +34,11 @@ Third Party Software:
 	Perian-1.2.3	Perian-1.2.3.pkg	sha1:65aae2c6b8fe428186fc7b81fd33995a5d4bcfa2
 
 	GoogleEarthMacNoUpdate-Intel	GoogleEarthMacNoUpdate-Intel.dmg	sha1:e8984613103c0d3dee87478f9a4ef2e2b191b761
-	Google SketchUp 8.0 Installer	Google SketchUp 8.0 Installer.mpkg	sha1:b0e15b4d5a7a62bd9de08ba9fdb45fe4b7bdc4f2
+	Google SketchUp 8.0 Installer	Google SketchUp 8.0 Installer.mpkg	sha1:01dc47a9e33948c1810cfb315a315ce19e483c9e
 
-	JES_Deinterlacer_v3.8.1	JES_Deinterlacer_v3.8.1.dmg	sha1:1f0eff66fdba769a986869f548d1034b7ff3e465
+	JES Deinterlacer v3.8.2	JES_Deinterlacer_3-8-2_Install-1.0.0.pkg	sha1:2b59524c88d76f5ba229146c5d487e48d34c3782
 	MPEG Streamclip 1.9.2	MPEG_Streamclip_1.9.2.dmg	sha1:346ea3aef9b7638a0e39e30e494f04010c73afe1
-	Evom	Evom.dmg	sha1:6054e6d72904aa3c327dfaa9297b953492e50845
-	evomsupport	evomsupport.pkg	sha1:339e5c1bbd6c8fa7a54569472b99672613589aa2
+	Evom	Evom_1-0-1_Install_InstaDMG-1.0.0.pkg	sha1:7135e7465d83bb8ce2e69becb69b5df322413a39
 
 
 # AVCCAM Viewer not qualified for Lion
@@ -46,8 +46,8 @@ Third Party Software:
 
 Software Settings:
 
-	firstrun-textwrangler	firstrun-textwrangler.pkg	sha1:2fc32591bec9e50032c9d28ec8ecdf2fb741b720
-	textwrangler-cmdlines	textwrangler-cmdlines.pkg	sha1:0a74413a8633b97c42c05e7a6697166df58d3d77
+	firstrun textwrangler	prefs_TextWrangler_firstrun_InstaDMG-1.0.0.pkg	sha1:e5b5de9e3a2e33983052ba72c39e8b106ffe9cb6
+	textwrangler cmdlines	prefs_TextWrangler_cmdline-1.0.0.pkg	sha1:f64f93e48df9a84118035cba8877e7ffa5f1e2cb
 	firstrun-prod-gs	firstrun-prod-gs.pkg	sha1:7e55c6d363eda6677cca17124b5ca44261b730ff
 	firstrun-prod-mps	firstrun-prod-mps.pkg	sha1:5bba406819c682ab50090a17d3ca5456bbf00e86
 #	Seems to cause a connection problem for ifss user (okay for ladmin)

@@ -21,11 +21,12 @@ System Settings:
 	# No longer doing this because of iWork 09
 #	NoMAS	NoMAS.pkg	sha1:86aa4aba4d9eb3e806ab6711cf8e653c0244352a
 	
-	# Note - install basic dock only at this stage: need to update throughout build train
-	Copy Prefs	CopyPrefs.pkg	sha1:920c442654ef3c9f666f6444dd437557607a6ab7
+	# Luggage version of old CopyPrefs.pkg
+	prefs_symhotkeys-1.0.0	prefs_symhotkeys-1.0.0.pkg	sha1:aaf4cb3922572131ebbe164ed2a4f1abac1cb4d4
+
 	
-	# SetPics script won't run, but this will install required pics
-	Set Pics	SetPics.pkg	sha1:f0c1da58caa4c290968d4b91f12969b77424ab00
+	# Luggage version replacing old SetPics.pkg -- installs desktop and ifss user pics
+	Install Pics Only	prefs_installPicsOnly-1.0.0	sha1:db2f2c33aeba6e9cd03c77444c802ae1d83ac4b1
 	
 	create local admin	createladminUser.pkg	sha1:a307ea50a866c66568d4a0abe46a881fb21f6320
 	create IFSS user	createIFSSUser.pkg	sha1:8f561c468b96eea1f1c29559162a952b500a7584
@@ -36,25 +37,20 @@ System Settings:
 	
 	Copy MCX	CopyMCX.pkg	sha1:0e227e491fe1144f0293c63f297b1dd96c84f0b9
 
-	enableAD	enableAD.pkg	sha1:fddd573ebf880d6f0f504ec6450c2b33e44448f6
+	# Lugggage version replaces old enableAD.pkg
+	Enable Assistive Devs	prefs_AssistiveDevs-1.0.0.pkg	sha1:5863e997f2c94041d959ba225ea8c790e47e7dcc
 	
-#	firstboot	firstboot.mpkg	sha1:ab527fcd94db2a458b3f4301df0cdc4500a004ca
-#	Use this version for Lab 2 computers (connect to IFSS3 Airport)
-#	firstbootl2	firstbootl2.mpkg	sha1:cd061426e65a6b12cadebc73bfb7e3ef510af632	
-# New Luggage version
-	firstboot_10_6_lab_2-1.0.0	firstboot_10_6_lab_2-1.0.0.pkg	sha1:d173685857b243247df0115a14fea19daa416e83
-# New luggage version that should work for 10.6 or 10.7
-#	firstboot_10_7_lab_1-1.0.0	firstboot_10_7_lab_1-1.0.0.pkg	sha1:7fa5f8b52b6b529088ceb8e16bab3c3504ef99cd
+	# New luggage version that should work for 10.6 or 10.7
+	Firstboot Lab 2	firstboot_10.7_Lab_2-1.0.0.pkg	sha1:7aa1e5974c22bbbc6a64b8b168fd49e3273b3bdd
 
-
-	# For Ricoh Aficio 2022 printer
-	#2022prefs	2022prefs.pkg	sha1:11cea7c95eca1c4dc3752032434bc4341741e5a2
-
+	# Language and region settings - consider replacing/updating
 	initSettings	initSettings.mpkg	sha1:3c11c811fc0d34a8f0a59962b24d6548c7f02269
+	
+	# replace MCX settings every boot - consider remaking
 	resetMCX	resetMCX.mpkg	sha1:e7902fa62a00b1deeb7860b9668e1fb6a088c9ee
 
-#	Set software update preferences (checking off)	
-	softwareupdate	softwareupdate.pkg	sha1:10097845982e8b5ffc03a912ce9c0c5bf4a5a5c5
+#	Set software update preferences (checking off)	(may not be needed with current firstboot)
+#	softwareupdate	softwareupdate.pkg	sha1:10097845982e8b5ffc03a912ce9c0c5bf4a5a5c5
 
 
 Apple Updates:
@@ -67,7 +63,7 @@ Third Party Software:
 #	Use Star Deploy to deploy updates and new packages/apps/files 
 	StarDeploy v2.0	StarDeploy v2.0.pkg	sha1:50cb8dfb8e484f90b8aca397460e9feb108929d2
 	launchd_StarDeploy-1.0.0	launchd_StarDeploy-1.0.0.pkg	sha1:f00e7731e5a2c4ea459f4d735a9d3f0649245f0e
-	prefs_StarDeploy-1.0.0	prefs_StarDeploy-1.0.0.pkg	sha1:111502b6780aa17f2a56cada94384996b8151f64
+	prefs_StarDeploy-1.0.0	prefs_StarDeploy-1.0.0.pkg	sha1:796e6fce8063c6346909b93dfc9c862a13d1ce2e
 
 
 	Flip4Mac WMV	Flip4Mac WMV.mpkg	sha1:788004704b5fee8da92f4243644afe6438f25c93

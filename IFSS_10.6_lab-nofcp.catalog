@@ -22,7 +22,8 @@
 System Settings:
 
 #	Install appropriate dock
-	setdock-edit	setdock-edit.pkg	sha1:d519f355a4d0224b631ac0c85f648fa087809ff0
+	Lab 2 Dock 10.6.8	prefs_Lab2Dock_10_6_8-1.0.0.pkg	sha1:35c413372255c473076e97a66f228f08fb569f8c
+
 
 #	Install cleanup scripts -- only needed for lab computers
 	cleanups	cleanups.mpkg	sha1:dc64105feb246542bca0cc7e7443eaed9b11c972

@@ -33,4 +33,5 @@ Third Party Software:
 
 Software Settings:
 
-	iWork09Prefs	iWork09Prefs.pkg	sha1:4fd23808729a2b63279913ef94a197f103fe0a9a
+	# Luggage version replaces iWork09Prefs.pkg
+	iWork 09 Prefs	prefs_iWork09_InstaDMG-1.0.0.pkg	sha1:79e3a511e3178651464e76b4fbe6bb1779153b34
